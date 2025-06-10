@@ -1,19 +1,18 @@
 type ReusableTextImageProp = {
+    title: string
     text: string
     image: string
 }
 
-const ReusableTextImage = ({text, image}:ReusableTextImageProp) => {
+const ReusableTextImage = ({ title, text, image }: ReusableTextImageProp) => {
     return (
-        <>
-        <h1>{text}</h1>
-        <div>{text}</div>
-        <div>{text}</div>
-        <div>{text}</div>
-        <div>{text}</div>
-        <img src={image} alt="image" />
-        </>
-
+        <div className="flex gap-4">
+            <div className="w-1/2 p-4">
+                <h1 className="pb-3">{title}</h1>
+                <div>{text}</div>
+            </div>
+            <img src={image} alt="image" className="w-1/2 h-auto p-4" />
+        </div>
     )
 }
 
