@@ -14,11 +14,26 @@ type ImageData = {
 
 type Props = {
   images: ImageData[];
+  title: string,
+  text1: string,
+  text2: string,
 };
 
-const ImageSlideshow = ({ images }: Props) => {
+const ImageSlideshow = ({ images, title, text1, text2 }: Props) => {
   return (
     <div className="w-full max-w-5xl">
+        <div className='flex justify-center w-full'>
+            <h2 style={{fontSize: "72px"}}>{title}</h2>
+        </div>
+        <div className='flex flex-col gap-6'>
+            <div>
+                {text1}
+            </div>
+            <div>
+                {text2}
+            </div>
+        </div>
+
       <Swiper
         centeredSlides
         slidesPerView={3}
@@ -37,7 +52,7 @@ const ImageSlideshow = ({ images }: Props) => {
             />
           </SwiperSlide>
         ))}
-        
+
       </Swiper>
     </div>
   );

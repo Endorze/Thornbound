@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+body {
+    background-color: black;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
 
 /*If you remove my slider css i will wreak havoc on you*/
 .swiper-slide img {
@@ -9,13 +17,14 @@
 }
 
 .swiper-slide-active img {
-  transform: scale(1.1); /* Larger image */
+  transform: scale(1.1);
   opacity: 1;
   z-index: 10;
 }
 
 .swiper-button-prev, .swiper-button-next {
   margin-top: 150px!important;
+  --swiper-theme-color: orange!important;
 }
 
 .swiper {
