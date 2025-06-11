@@ -1,6 +1,7 @@
+import TextImage from "./components/014-Feature/Text-Image";
 import ImageCarousel from "./components/Carousel/Carousel";
 import images from "@/data/images";
-import TextImage from "./components/006-Text&Image";
+
 
 export default function Home() {
   return (
