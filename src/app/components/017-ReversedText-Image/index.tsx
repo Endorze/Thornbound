@@ -1,6 +1,7 @@
+import ReusableTextImage from "../006-Resusable-Text-Image"
 const Reversed = () => {
     return (
-        <div>Image and Text</div>
+        <ReusableTextImage title={""} text={""} image={""}/>
     )
 }
 export default Reversed
