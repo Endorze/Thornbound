@@ -1,4 +1,37 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+body {
+    background-color: black;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*If you remove my slider css i will wreak havoc on you*/
+.swiper-slide img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.7;
+  transform: scale(0.9);
+}
+
+.swiper-slide-active img {
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: 10;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  margin-top: 150px!important;
+  --swiper-theme-color: orange!important;
+  transition: all 0.3s ease-in;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  --swiper-theme-color: rgb(255, 199, 96)!important;
+}
+
+.swiper {
+  --swiper-navigation-sides-offset: 40%
+}
