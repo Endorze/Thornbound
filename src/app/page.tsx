@@ -1,6 +1,7 @@
 import ImageCarousel from "./components/Carousel/Carousel";
 import images from "@/data/images";
 import DownloadButton from "./components/DownloadButton/DownloadButton";
+import H2Title from "./components/H2Title/H2Title";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <h1>Sex laxar i en laxask</h1>
       <ImageCarousel images={images} title="Kravia Manor" text1="lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla" text2="lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla"/>
       <DownloadButton />
+      <H2Title text="This is Yasmines test title" size="72px"/>
     </div>
   );
 }
