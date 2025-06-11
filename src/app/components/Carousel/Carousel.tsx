@@ -71,7 +71,7 @@ const ImageCarousel = ({ images, title, text1, text2 }: Props) => {
             slidesPerView={1}
             loop
             modules={[Pagination]}
-            className="w-full max-w-[400px] h-[400px]"
+            className="w-full max-w-[400px]"
           >
             {images.map((image, index) => (
               <SwiperSlide key={index} className="flex justify-center">
