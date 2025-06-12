@@ -25,6 +25,11 @@ body {
 .swiper-button-prev, .swiper-button-next {
   margin-top: 150px!important;
   --swiper-theme-color: orange!important;
+  transition: all 0.3s ease-in;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  --swiper-theme-color: rgb(255, 199, 96)!important;
 }
 
 .swiper {
