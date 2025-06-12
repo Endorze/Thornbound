@@ -12,7 +12,7 @@ export default function Lore() {
           nesciunt fuga quasi optio? Quam in nemo nobis
         </p>
       </TransparentContainer>
-      
+  
     </main>
   );
 }
