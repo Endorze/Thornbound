@@ -14,6 +14,7 @@ export default function Home() {
         <ImageCarousel images={images} title="Kravia Manor" text1="lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla" text2="lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla" />
         <H2Title text="This is Yasmines test title" size="72px" />
         <ReusableTextImage title="Thornbound(developer)" text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam ad ipsum expedita facere, dignissimos, autem dolor odit consectetur sapiente saepe aliquam? Praesentium ratione, natus laudantium temporibus itaque quam quibusdam soluta?" image="./image.png"/>
+        <ReusableTextImage title="Thornbound(developer)" text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam ad ipsum expedita facere, dignissimos, autem dolor odit consectetur sapiente saepe aliquam? Praesentium ratione, natus laudantium temporibus itaque quam quibusdam soluta?" image="./image.png" reversed= {true}/>
       </div>
     </>
   );
