@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cinzel, Almendra, Vollkorn } from 'next/font/google';
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const cinzel = Cinzel({
+  subsets: ['latin'],
+  weight: ['400', '700', '900'],
+  variable: '--font-cinzel',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const almendra = Almendra({
+  subsets: ['latin'],
+  weight: ['400', '700'], // Almendra har bara vissa vikter
+  variable: '--font-almendra',
+});
+
+const vollkorn = Vollkorn({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-vollkorn',
 });
 
 export const metadata: Metadata = {
@@ -25,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${cinzel.variable} ${almendra.variable} ${vollkorn.variable}`}
       >
         {children}
       </body>
