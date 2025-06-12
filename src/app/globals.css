@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 body {
     background-color: black;
     color: white;
@@ -30,3 +29,4 @@ body {
 .swiper {
   --swiper-navigation-sides-offset: 40%
 }
+
