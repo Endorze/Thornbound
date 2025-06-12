@@ -2,13 +2,18 @@ import TransparentContainer from "../components/TransparentContainer/Transparent
 
 export default function Lore() {
   return (
-    <div className="min-h-screen bg-black p-8 flex items-center justify-center">
-      <TransparentContainer
-        title="LORE"
-        paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod tempor..."
-        imageSrc="/placeholder.png" // Or your real image path
-        className="max-w-3xl"
-      />
-    </div>
+    <main className="min-h-screen bg-black -400 flex flex-col items-center justify-center p-8 text-white">
+      
+      <h2 className="text-[64px] font-normal text-center mb-10">LORE</h2>
+      <TransparentContainer>
+        <p className="text-[20px] leading-relaxed text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam illum iusto error aperiam corrupti, recusandae, ipsam amet perferendis ullam ea nisi,
+          <br />
+          nesciunt fuga quasi optio? Quam in nemo nobis
+        </p>
+      </TransparentContainer>
+      
+    </main>
   );
 }
+
