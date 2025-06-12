@@ -3,8 +3,7 @@ import images from "@/data/images";
 import ReusableHero from "./components/ReusableHero/ReusableHero";
 import H2Title from "./components/H2Title/H2Title";
 import H1Title from "./components/H1Title";
-import TextImage from "./components/014-Feature/Text-Image";
-import Reversed from "./components/017-ReversedText-Image";
+import ReusableTextImage from "./components/006-Resusable-Text-Image";
 
 export default function Home() {
   return (
@@ -14,9 +13,8 @@ export default function Home() {
         <ReusableHero mainHero={true} />
         <ImageCarousel images={images} title="Kravia Manor" text1="lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla" text2="lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla" />
         <H2Title text="This is Yasmines test title" size="72px" />
+        <ReusableTextImage title="Thornbound(developer)" text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam ad ipsum expedita facere, dignissimos, autem dolor odit consectetur sapiente saepe aliquam? Praesentium ratione, natus laudantium temporibus itaque quam quibusdam soluta?" image="./image.png"/>
       </div>
-      <TextImage />
-      <Reversed />
     </>
   );
 }
