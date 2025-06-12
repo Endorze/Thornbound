@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import ImageCarousel from "./components/Carousel/Carousel";
 import images from "@/data/images";
 import ReusableHero from "./components/ReusableHero/ReusableHero";
