@@ -1,9 +1,11 @@
+<<<<<<< HEAD
 import ImageCarousel from "./components/Carousel/Carousel";
 import images from "@/data/images";
 import ReusableHero from "./components/ReusableHero/ReusableHero";
 import H2Title from "./components/H2Title/H2Title";
 import H1Title from "./components/H1Title";
 import TextImage from "./components/014-Feature/Text-Image";
+import Reversed from "./components/017-ReversedText-Image";
 
 export default function Home() {
   return (
@@ -15,6 +17,7 @@ export default function Home() {
         <H2Title text="This is Yasmines test title" size="72px" />
       </div>
       <TextImage />
+      <Reversed />
     </>
   );
 }
