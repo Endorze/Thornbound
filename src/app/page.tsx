@@ -1,8 +1,8 @@
 import ImageCarousel from "./components/Carousel/Carousel";
 import images from "@/data/images";
 import ReusableHero from "./components/ReusableHero/ReusableHero";
-
 import DownloadButton from "./components/DownloadButton/DownloadButton";
+import ThornboundFooter from "./components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
       <ImageCarousel images={images} title="Kravia Manor" text1="lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla" text2="lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla"/>
       <DownloadButton />
     </div>
+    <ThornboundFooter />
    </>
   );
 }

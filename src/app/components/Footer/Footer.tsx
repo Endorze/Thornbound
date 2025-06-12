@@ -5,7 +5,7 @@ export default function ThornboundFooter() {
         {/* Left side - Logo */}
         <div className="flex-shrink-0">
           <img 
-            src="/path-to-your-logo.png" 
+            src="/thornbound.png" 
             alt="Thornbound" 
             className="h-20 w-auto"
           />
@@ -17,7 +17,7 @@ export default function ThornboundFooter() {
             Play the game now!
           </h2>
           <img 
-            src="/path-to-your-download-button.png" 
+            src="/download.png" 
             alt="Download" 
             className="h-12 w-auto cursor-pointer hover:opacity-80 transition-opacity"
           />
