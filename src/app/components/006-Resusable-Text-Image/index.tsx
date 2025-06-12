@@ -2,12 +2,14 @@ type ReusableTextImageProp = {
     title: string
     text: string
     image: string
+    reversed?: boolean;
 }
 
-const ReusableTextImage = ({ title, text, image }: ReusableTextImageProp) => {
+const ReusableTextImage = ({ title, text, image, reversed = false }: ReusableTextImageProp) => {
     return (
-        <div className="flex flex-col md:flex-row gap-4">
-            <div className="w-full md:w-1/2 p-4">
+         <div className={`flex flex-col lg:flex-row ${reversed ? 'lg:flex-row-reverse' : ''} gap-6`}>
+            <div className="w-1/2 p-4">
+
                 <h1 className="pb-3">{title}</h1>
                 <div>{text}</div>
             </div>
@@ -17,3 +19,4 @@ const ReusableTextImage = ({ title, text, image }: ReusableTextImageProp) => {
 }
 
 export default ReusableTextImage
+
