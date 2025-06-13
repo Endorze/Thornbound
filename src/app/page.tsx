@@ -1,4 +1,4 @@
-import TransparentContainerResuseable from "@/app/components/TransparentContainerResuseable/TransparentContainerResuseable";
+import TransparentContainerResuseable from "@/app/components/TransparentContainerResuseable";
 
 export default function Home() {
   return (
