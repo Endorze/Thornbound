@@ -5,7 +5,7 @@ import ReusableHero from "./components/ReusableHero/ReusableHero";
 import H2Title from "./components/H2Title/H2Title";
 import H1Title from "./components/H1Title";
 import ReusableTextImage from "./components/006-Resusable-Text-Image";
-import TransparentContainer from "@/app/components/TransparentContainer/TransparentContainer";
+import TransparentContainer from "@/app/components/TransparentContainerReusable";
 
 
 
@@ -15,7 +15,7 @@ export default function Home() {
       <H1Title text="Thornbound" size="100px" />
 
       <div className="w-full p-2 flex flex-col items-center justify-center">
-        <TransparentContainer>
+        <TransparentContainerReusable>
           <ReusableHero mainHero={true} />
           <ImageCarousel
             images={images}
@@ -35,7 +35,7 @@ export default function Home() {
             image="/image.png"
             reversed={true}
           />
-        </TransparentContainer>
+        </TransparentContainerReusable>
       </div>
     </>
   );
