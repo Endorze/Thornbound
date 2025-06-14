@@ -2,11 +2,14 @@ import { ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
+   className?: string;
 }
 
-export default function TransparentContainer({ children }: Props) {
+export default function TransparentContainerReusable({ children, className }: Props) {
   return (
-    <div className="flex flex-col bg-white/10 backdrop-blur-md p-9 rounded-xl border border-white/20 text-gray-300">
+    <div
+      className={`w-full max-w-4xl bg-black/0 rounded-xl p-10 border border-white/20 shadow-xl ${className}`}
+    >
       {children}
     </div>
   );
