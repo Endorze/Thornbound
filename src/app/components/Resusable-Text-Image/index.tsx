@@ -23,3 +23,4 @@ const ReusableTextImage = ({ title, text, image, reversed = false }: ReusableTex
 }
 
 export default ReusableTextImage;
+
