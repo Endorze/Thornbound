@@ -11,6 +11,7 @@ export default function Home() {
     <div className="w-full p-2 flex flex-col items-center justify-center">
       <ReusableHero mainHero={true}/>
       <ImageCarousel images={images} title="Kravia Manor" text1="lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla" text2="lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla"/>
+              <H2Title text="Test title" size="62px"/>
     </div>
    </>
   );
