@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const CreditsSection = () => {
   return (
-    <div className="relative w-full h-[800px] bg-[url('/Background.png')] bg-cover bg-center text-white">
+    <div className="relative w-full h-[800px] bg-[url('/herolotus.png')] bg-cover bg-center text-white">
       <h1 className="absolute left-[495px] top-[195px] text-[100px] font-[400] leading-[135px] text-center font-cinzel border border-black shadow-[0_0_16px_rgba(0,0,0,0.8)] w-[449px] h-[135px]">
         CREDITS
       </h1>
@@ -18,7 +18,7 @@ const CreditsSection = () => {
 
         <div className="absolute w-[532px] h-[375px] top-[127px] left-[692px]">
           <Image
-            src="/Checker.png"
+            src="/images/angel.png"
             alt="Credits Illustration"
             width={532}
             height={375}
