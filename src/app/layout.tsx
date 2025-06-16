@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cinzel, Almendra, Vollkorn } from 'next/font/google';
 import ScrollToTop from './components/ScrollToTop';
 import "./globals.css";
+import Header from "./components/001-Feature-Header";
 
 const cinzel = Cinzel({
   subsets: ['latin'],
@@ -34,6 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${cinzel.variable} font-sans`}>
+        <Header />
         {children}
       <ScrollToTop/>
       </body>
