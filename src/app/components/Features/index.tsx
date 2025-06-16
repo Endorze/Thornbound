@@ -7,9 +7,8 @@ const Features = () => {
       <div className="text-center">
         <H1Title text="Features" size="60px" />
       </div>
-      <div className="p-4 flex flex-col gap-4 w-full">
-        <ReusableTextImage
 
+        <ReusableTextImage
           title="Headline"
           text="Embark on a perilous journey through the cursed Thornbound realm, where ancient magic and dark forces intertwine. Master powerful abilities, forge alliances with mysterious beings, and uncover the secrets of a world teetering on the edge of destruction.
 
@@ -39,7 +38,7 @@ const Features = () => {
           image="/thornbound.png"
           reversed={true}
         />
-      </div>
+
     </>
   );
 };
