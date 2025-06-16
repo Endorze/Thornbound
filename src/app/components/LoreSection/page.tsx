@@ -3,19 +3,12 @@ import Image from "next/image";
 export default function LoreSection() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20 text-center">
-      
-      <h2
-        className="text-5xl font-bold tracking-wider mb-10 font-clinzel"
-        style={{ fontFamily: "'Clinzel', serif" }}
-      >
-        LORE
-      </h2>
-
       <div className="w-full flex flex-col items-center justify-center px-6 py-12 bg-black bg-opacity-50 rounded-xl shadow-lg border border-white">
-        
-        <p className="text-lg mb-8 text-gray-400">
+
+        <p className="text-lg mb-8 text-gray-400 leading-relaxed">
           In a cabin deep in a forest you find Zerim, a once renowned adventuring mage whose granddaughter Elira has fallen gravely ill. With no remedy working he embarks on a final journey to find the rare healing flower Virellis, located deep within the walls of Castle Kravia. With its design built around the flower and its inhabitants compelled to protect it, Zerim will need to use his rusty skills to get out alive and save his granddaughter Elira.
         </p>
+
         <div className="w-full max-w-md rounded-lg overflow-hidden shadow-xl">
           <Image
             src="/image.png"
