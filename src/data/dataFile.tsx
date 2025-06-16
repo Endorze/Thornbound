@@ -1,14 +1,15 @@
 type DataFileProp = {
     name: string
     description: string
-    image: string
+    image?: string
+    images?: string[]
 }
 
 export const DataFile: DataFileProp[] = [
     {
         name: "LEON",
         description: "I'm the product owner and the technical/combat designer on this team. As the technical designer, I have a deep understanding of Unreal Engine and its features. I design the enemies, their attack patterns, and handle balancing. I also design how the character functions, including spells and movements. As the product owner, I pitch and present the game, I stay involved in all aspects of its development, whether it's art, VFX, programming, or design. As a designer, I've been blessed with the slowest computer known to mankind.Some say it's a clever strategy to make us better at optimizing our games.And it worked.",
-        image:"./images/leon.jpg"
+        image: "./images/leon.jpg"
     },
 
     {
@@ -99,5 +100,64 @@ export const DataFile: DataFileProp[] = [
         name: "LOTTEN",
         description: "To stand behind team 10 in this creative process has been amazing! Thornbound was one of my teams during the GP3 & Web Project, and to be part of the journey from getting to know each other, to brainstorming, to structurizing the workflow was really cool! One new thing I got to learn was working alot with JIRA.I learned the basics and then held a workshop for the team.I know this will be valuable in the future for me! Together with Aida and Ola I helped the team with Miro Structure, planning, facilitating, making sure the team was on track and not overscoping.Easier said than done! But in the end, this will be an experience I will never forget and who knows, maybe I'll work in gaming! ",
         image: "./images/lotten.jpg"
+    },
+
+    //from ticket 022-024
+    {
+        name: "Spells",
+        description: " Zerim wields fire and lightning magic, drawn from the crystals growing within the castle. Fire burns the hottest but doesn’t reach very far, making it useful for close encounters when aiming time is limited. Lightning is cooler but has greater range, making it excellent for keeping Zerim at a distance from cursed ones.",
+        image: ""
+    },
+
+    {
+        name: "Stealth",
+        description: "Even in his old age, Zerim remains light on his feet. Slowing down and sneaking up on the cursed husks allows you to take them out stealthily. Alternatively, charging in with hands ablaze, casting spells left and right, might seem tempting until you run out of crystals and the full wrath of the castle is chasing you deeper into the catacombs.",
+        image: ""
+    },
+
+    {
+        name: "Puzzles",
+        description: "The castle is full of puzzles and traps. Zerim needs to travers the castles dark and winding corridors, filled with devious puzzles and traps. Unsettling tails suggested that the castle itself were out to collect your soul. ",
+        image: ""
+    },
+
+    // for credits page from ticket 029-030
+    {
+        name: "Fab and CGTrader",
+        description: "In addition to the assets created by our artists, assets from online marketplaces such as Fab and CGtrader were used to further assist our artists, in regards to both characters and props. These assets sourced from the marketplace have been used in a way where the artists alter the meshes or textures in order to fit the art direction of the game and to keep the involvement of the artists throughout the whole production process.",
+        image: ""
+    },
+
+    {
+        name: "Background Artwork",
+        description: "We would like to give an honourable mention to our fellow classmate, Antonia Mertes, from the Animation and VFX class of 2024, Futuregames Stockholm, where she assisted with providing the illustration used on the background artwork for our webpage and Itch.IO thumbnail.",
+        image: ""
     }
 ]
+
+export const LoreItems: DataFileProp[] = [
+    {
+        name: "top (general)",
+        description: "In a cabin deep in a forest you find Zerim, a once renowned adventuring mage whose granddaughter Elira has fallen gravely ill. With no remedy working he embarks on a final journey to find the rare healing flower Virellis, located deep within the walls of Castle Kravia. With its design built around the flower and its inhabitants compelled to protect it, Zerim will need to use his rusty skills to get out alive and save his granddaughter Elira.",
+        image: ""
+    },
+
+    {
+        name: "ZERIM",
+        description: "After putting his mage cap on the shelf Zerim settled down decades ago to raise a family, life has been peaceful as he is now the sole caretake of his granddaughter Elira until she fell gravely ill. With every remedy, concoction and even magic tried to cure the illness he feels defeated until he gets reminded of an old tale. A flower called Virellis that can cure anything and anyone, he rifles through his journals from his past days and finds a note with the presumed location of Virellis in the forgotten Castle Kravia. He embarks on one last journey to save Elira from her grim fate.",
+        images: ["image1", "image2", "image3"]
+    },
+
+    {
+        name: "VIRELLIS",
+        description: "There's not much information recorded of this flower, it all lies in rumours and tales which most regard as a myth.  But the rough supposed documentation tells that it can heal any injury or illness when used on another but it offers another option as well. To those who decide to use it on themselves, consuming it can grant you eternal life...Many have dared to seek out this flower to get a hold of the flower and be granted eternal life, but no one has returned.",
+        images: ["image1", "image2", "image3"]
+    },
+
+    {
+        name: "KRAVIA MANOR",
+        description: "There once was a rich scholar, interested in the arcane and all its creations, especially the rare kind. Her name was Corryn Vaunt, it is said that she was the owner of this Castle and some speculate that she has Virellis protected inside of it, she might have even built the castle around it. Many have dared venturing into its halls, but no one has been able to come back and tell of what's inside it.",
+        images: ["image1", "image2", "image3"]
+    }
+]
+
