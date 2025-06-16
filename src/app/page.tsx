@@ -1,8 +1,7 @@
-
-
 import ImageCarousel from "./components/Carousel/Carousel";
 import images from "@/data/images";
 import ReusableHero from "./components/ReusableHero/ReusableHero";
+import CreditsSection from "./components/005-credits-section";
 import H2Title from "./components/H2Title/H2Title";
 import H1Title from "./components/H1Title";
 import ReusableTextImage from "./components/Resusable-Text-Image";
@@ -11,12 +10,10 @@ import ReusableH3Title from "./components/ReusableH3Title/ReusableH3Title";
 import TransparentContainerReusable from "@/app/components/TransparentContainerReusable";
 import Features from "./components/Features";
 
-
 export default function Home() {
   return (
      <>
      <div className="min-h-screen bg-black  px-6 sm:px-18 py-10 space-y-12">
-
 
       <H1Title text="Thornbound" size="100px" />
 
@@ -41,11 +38,11 @@ export default function Home() {
         </div>
 
         <Features />
-
-        </>
-
-
-
-
+    <div className="w-full p-2 flex flex-col items-center justify-center">
+      <ReusableHero mainHero={true}/>
+      <ImageCarousel images={images} title="Kravia Manor" text1="lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla" text2="lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla"/>
+      <CreditsSection />
+    </div>
+   </>
   );
 }
