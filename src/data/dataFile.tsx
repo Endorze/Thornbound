@@ -44,7 +44,7 @@ export const DataFile: DataFileProp[] = [
     {
         name: "BARRY",
         description: "My role as Art Director for Thornbound included making sure that the art department was aligned with the design department on the visual aspects of the game, in terms of environment assets, animations, and visual effects.Additionally, my role included making sure that the artist's workload was manageable and that delivery is made on time. As an animator, I provided motion capture animations, cleanups, and handkeyed animations for the enemies of the game, as well as a few additional player character animations.",
-        image: ""
+        image: "./barry.png"
     },
 
     {
@@ -86,7 +86,7 @@ export const DataFile: DataFileProp[] = [
     {
         name: "AIDA",
         description: "Hi I'm Aida, an aspiring game producer with a background in business leadership and a heart set on game development.Currently studying Agile Project Management at Futuregames.As both producer and release manager in GP3, I produce workshops, lead sprints, track progress in Jira, clear blockers, arrange playtesters, Q / A and bug tracker, handle build pipelines and ensure smooth delivery. With CEO experience, UX thinking, and a love for tech, I keep teams aligned without killing the vibe.I’ve shipped SaaS products, pitched to royalty.Now I want to help craft experiences that players love and teams enjoy building.",
-        image: ""
+        image: "./aida.jpg"
     },
 
     {
