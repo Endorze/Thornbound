@@ -42,8 +42,11 @@ const Header = () => {
             </nav>
 
             <div className="relative mt-4 md:mt-0">
-                <button onClick={toggleDropdown} className="flex items-center justify-center">
-                    <RiGlobalLine className="w-6 h-6 text-white" />
+                <button onClick={toggleDropdown} className="flex items-center justify-center" 
+                aria-haspopup="true"
+                    aria-expanded={isDropdownOpen}
+                     aria-label="Language selector">
+                    <RiGlobalLine className="w-10 h-8 text-white" />
                 </button>
 
                 {isDropdownOpen && (
