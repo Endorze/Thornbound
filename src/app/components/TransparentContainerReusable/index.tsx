@@ -18,7 +18,7 @@ export default function TransparentContainer({
 
   return (
     <div 
-      className={`relative bg-black/50 backdrop-blur-sm border border-white/30 rounded-lg p-40 shadow-lg hover:opacity-75 transition-all duration-300 ${className}`}
+      className={`relative bg-black/50 backdrop-blur-sm border border-white/30 rounded-lg p-60 shadow-lg hover:opacity-75 transition-all duration-300 ${className}`}
       style={{ opacity: safeOpacity / 100 }}
     >
       {children}
