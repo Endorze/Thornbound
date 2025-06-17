@@ -18,7 +18,7 @@ const CreditsSection = () => {
 
         <div className="absolute w-[532px] h-[375px] top-[127px] left-[692px]">
           <Image
-            src="/images/lotten.jpg"
+            src="/images/angel.png"
             alt="Credits Illustration"
             width={532}
             height={375}
@@ -31,7 +31,3 @@ const CreditsSection = () => {
 };
 
 export default CreditsSection;
-
-
-
-
