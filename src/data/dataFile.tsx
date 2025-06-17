@@ -5,7 +5,7 @@ export type DataFileProp = {
     images?: string[]
 }
 
-export const DataFile: DataFileProp[] = [
+export const IndividualsData: DataFileProp[] = [
     //tickets 003- 018
     {
         name: "LEON",
@@ -87,7 +87,7 @@ export const DataFile: DataFileProp[] = [
 
     {
         name: "AIDA",
-        description: "Hi I'm Aida, an aspiring game producer with a background in business leadership and a heart set on game development.Currently studying Agile Project Management at Futuregames.As both producer and release manager in GP3, I produce workshops, lead sprints, track progress in Jira, clear blockers, arrange playtesters, Q / A and bug tracker, handle build pipelines and ensure smooth delivery. With CEO experience, UX thinking, and a love for tech, I keep teams aligned without killing the vibe.I’ve shipped SaaS products, pitched to royalty.Now I want to help craft experiences that players love and teams enjoy building.",
+        description: "Hi I'm Aida, an aspiring game producer with a background in business leadership and a heart set on game development.Currently studying Agile Project Management at Futuregames.As both producer and release manager in GP3, I produce workshops, lead sprints, track progress in Jira, clear blockers, arrange playtesters, Q / A and bug tracker, handle build pipelines and ensure smooth delivery. With CEO experience, UX thinking, and a love for tech, I keep teams aligned without killing the vibe.I've shipped SaaS products, pitched to royalty.Now I want to help craft experiences that players love and teams enjoy building.",
         image: "./images/aida.jpg"
     },
 
@@ -104,22 +104,7 @@ export const DataFile: DataFileProp[] = [
     },
 ]
 
-export const creditsItems:DataFileProp[] = [
-    // for credits page from ticket 029-030
-    {
-        name: "Fab and CGTrader",
-        description: "In addition to the assets created by our artists, assets from online marketplaces such as Fab and CGtrader were used to further assist our artists, in regards to both characters and props. These assets sourced from the marketplace have been used in a way where the artists alter the meshes or textures in order to fit the art direction of the game and to keep the involvement of the artists throughout the whole production process.",
-        image: "ola.png"
-    },
-
-    {
-        name: "Background Artwork",
-        description: "We would like to give an honourable mention to our fellow classmate, Antonia Mertes, from the Animation and VFX class of 2024, Futuregames Stockholm, where she assisted with providing the illustration used on the background artwork for our webpage and Itch.IO thumbnail.",
-        image: "ola.png"
-    }
-]
-
-export const featuresItems:DataFileProp[] = [
+export const FeaturesItems: DataFileProp[] = [
     //from tickets 022-024
     {
         name: "Spells",
@@ -138,7 +123,9 @@ export const featuresItems:DataFileProp[] = [
         description: "The castle is full of puzzles and traps. Zerim needs to travers the castles dark and winding corridors, filled with devious puzzles and traps. Unsettling tails suggested that the castle itself were out to collect your soul. ",
         image: "./images/puzzle.png"
     },
+]
 
+export const CreditsItems: DataFileProp[] = [
     // for credits page from tickets 029-030
     {
         name: "Fab and CGTrader",
