@@ -5,7 +5,7 @@ type DataFileProp = {
     images?: string[]
 }
 
-export const DataFile: DataFileProp[] = [
+export const IndividualData: DataFileProp[] = [
     {
         name: "LEON",
         description: "I'm the product owner and the technical/combat designer on this team. As the technical designer, I have a deep understanding of Unreal Engine and its features. I design the enemies, their attack patterns, and handle balancing. I also design how the character functions, including spells and movements. As the product owner, I pitch and present the game, I stay involved in all aspects of its development, whether it's art, VFX, programming, or design. As a designer, I've been blessed with the slowest computer known to mankind.Some say it's a clever strategy to make us better at optimizing our games.And it worked.",
@@ -101,11 +101,30 @@ export const DataFile: DataFileProp[] = [
         description: "To stand behind team 10 in this creative process has been amazing! Thornbound was one of my teams during the GP3 & Web Project, and to be part of the journey from getting to know each other, to brainstorming, to structurizing the workflow was really cool! One new thing I got to learn was working alot with JIRA.I learned the basics and then held a workshop for the team.I know this will be valuable in the future for me! Together with Aida and Ola I helped the team with Miro Structure, planning, facilitating, making sure the team was on track and not overscoping.Easier said than done! But in the end, this will be an experience I will never forget and who knows, maybe I'll work in gaming! ",
         image: "./images/lotten.jpg"
     },
+]
 
-    //from ticket 022-024
+   
+export const creditsItems:DataFileProp[] = [
+    // for credits page from ticket 029-030
+    {
+        name: "Fab and CGTrader",
+        description: "In addition to the assets created by our artists, assets from online marketplaces such as Fab and CGtrader were used to further assist our artists, in regards to both characters and props. These assets sourced from the marketplace have been used in a way where the artists alter the meshes or textures in order to fit the art direction of the game and to keep the involvement of the artists throughout the whole production process.",
+        image: "ola.png"
+    },
+
+    {
+        name: "Background Artwork",
+        description: "We would like to give an honourable mention to our fellow classmate, Antonia Mertes, from the Animation and VFX class of 2024, Futuregames Stockholm, where she assisted with providing the illustration used on the background artwork for our webpage and Itch.IO thumbnail.",
+        image: "ola.png"
+    }
+]
+
+
+export const featuresItems:DataFileProp[] = [
+     //from ticket 022-024
     {
         name: "Spells",
-        description: " Zerim wields fire and lightning magic, drawn from the crystals growing within the castle. Fire burns the hottest but doesn’t reach very far, making it useful for close encounters when aiming time is limited. Lightning is cooler but has greater range, making it excellent for keeping Zerim at a distance from cursed ones.",
+        description: " Zerim wields fire and lightning magic, drawn from the crystals growing within the castle. Fire burns the hottest but doesn't reach very far, making it useful for close encounters when aiming time is limited. Lightning is cooler but has greater range, making it excellent for keeping Zerim at a distance from cursed ones.",
         image: "ola.png"
     },
 
@@ -118,19 +137,6 @@ export const DataFile: DataFileProp[] = [
     {
         name: "Puzzles",
         description: "The castle is full of puzzles and traps. Zerim needs to travers the castles dark and winding corridors, filled with devious puzzles and traps. Unsettling tails suggested that the castle itself were out to collect your soul. ",
-        image: "ola.png"
-    },
-
-    // for credits page from ticket 029-030
-    {
-        name: "Fab and CGTrader",
-        description: "In addition to the assets created by our artists, assets from online marketplaces such as Fab and CGtrader were used to further assist our artists, in regards to both characters and props. These assets sourced from the marketplace have been used in a way where the artists alter the meshes or textures in order to fit the art direction of the game and to keep the involvement of the artists throughout the whole production process.",
-        image: "ola.png"
-    },
-
-    {
-        name: "Background Artwork",
-        description: "We would like to give an honourable mention to our fellow classmate, Antonia Mertes, from the Animation and VFX class of 2024, Futuregames Stockholm, where she assisted with providing the illustration used on the background artwork for our webpage and Itch.IO thumbnail.",
         image: "ola.png"
     }
 ]
