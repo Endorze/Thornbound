@@ -1,7 +1,15 @@
-export default function AboutUsPage() {
-    return (
-        <div className="flex flex-col items-center justify-center min-h-screen">
-            <h1 className="text-4xl font-bold"> Welcome to the About Us</h1>
-        </div>
-    )
+
+import ReusableHero from "@/app/components/ReusableHero/ReusableHero";
+import FeatureReusableCredits from "@/app/components/FeatureReusableCredits/FeatureReusableCredits";
+
+export default function AboutUs() {
+  return (
+    <main>
+     
+      <ReusableHero mainHero={false} title="ABOUT US" />
+
+     
+      <FeatureReusableCredits />
+    </main>
+  );
 }
