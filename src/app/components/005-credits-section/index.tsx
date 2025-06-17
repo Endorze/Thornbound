@@ -19,7 +19,7 @@ const CreditsSection = () => {
 
         <div className="w-full lg:w-[532px] flex justify-center">
           <Image
-            src="/images/barry.png"
+            src="/images/angel.png"
             alt="Credits illustration"
             width={532}
             height={375}
