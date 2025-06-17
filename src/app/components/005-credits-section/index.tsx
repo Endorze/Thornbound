@@ -1,32 +1,35 @@
+'use client';
+
 import Image from "next/image";
 
 const CreditsSection = () => {
   return (
-    <div className="relative w-full h-[800px] bg-[url('/herolotus.png')] bg-cover bg-center text-white">
-      <h1 className="absolute left-[495px] top-[195px] text-[100px] font-[400] leading-[135px] text-center font-cinzel border border-black shadow-[0_0_16px_rgba(0,0,0,0.8)] w-[449px] h-[135px]">
-        CREDITS
-      </h1>
-
-      <div className="absolute left-[88px] top-[400px] w-[1264px] h-[623px] bg-black/40 backdrop-blur-md shadow-[4px_4px_12px_rgba(0,0,0,0.8)] flex">
-        <div className="p-6 w-[612px] h-[420px] mt-[127px] ml-[40px] text-[20px] leading-[28px] font-vollkorn text-justify">
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.  
-          <br /><br />
-          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.  
-          <br /><br />
-          Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam...
+    <section className="w-full bg-black/40 backdrop-blur-md text-white px-4 py-16">
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+        
+        <div className="w-full lg:w-1/2 text-base md:text-lg leading-relaxed font-vollkorn text-justify space-y-6">
+          <p>
+            In addition to the assets created by our artists, assets from online marketplaces such as Fab and CGtrader were used to further assist our artists, in regards to both characters and props.
+          </p>
+          <p>
+            These assets sourced from the marketplace have been used in a way where the artists alter the meshes or textures in order to fit the art direction of the game and to keep the involvement of the artists throughout the whole production process.
+          </p>
+          
         </div>
 
-        <div className="absolute w-[532px] h-[375px] top-[127px] left-[692px]">
+        <div className="w-full lg:w-[532px] flex justify-center">
           <Image
-            src="/images/angel.png"
-            alt="Credits Illustration"
+            src="/images/barry.png"
+            alt="Credits illustration"
             width={532}
             height={375}
-            className="object-cover w-full h-full"
+            className="object-contain w-full h-auto rounded-xl shadow-lg"
+            priority
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
+
 export default CreditsSection;

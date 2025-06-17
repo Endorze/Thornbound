@@ -1,6 +1,4 @@
 @import "tailwindcss";
-
-
 :root {
   --font-cinzel: 'Cinzel', serif;
   --font-almendra: 'Almendra', serif;
@@ -56,5 +54,3 @@ body {
 .swiper {
   --swiper-navigation-sides-offset: 40%
 }
-
-

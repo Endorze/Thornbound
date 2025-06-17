@@ -1,9 +1,9 @@
-
 import TransparentContainerReusable from "@/app/components/TransparentContainerReusable";
 import ImageCarousel from "./components/Carousel/Carousel";
 import images from "@/data/images";
 import ReusableHero from "./components/ReusableHero/ReusableHero";
 import CreditsSection from "./components/005-credits-section";
+
 import H2Title from "./components/H2Title/H2Title";
 import H1Title from "./components/H1Title";
 import ReusableTextImage from "./components/Resusable-Text-Image";
@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <>
       <div className="min-h-screen bg-black text-white px-6 sm:px-18 py-10 space-y-12">
-
         <H1Title text="Thornbound" size="100px" />
+
         <TransparentContainerReusable className="bg-black/40">
           <div className="space-y-10">
             <ReusableHero mainHero={true} />
@@ -31,13 +31,12 @@ export default function Home() {
               title="Thornbound (developer)"
               text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam ad ipsum expedita facere, dignissimos, autem dolor odit consectetur sapiente saepe aliquam?"
               image="/image.png"
-
-              />
+            />
             <ReversedTextImage />
             <ReusableH3Title text="Lorem Ipsum" size="28px" />
           </div>
         </TransparentContainerReusable>
-        
+
         <ReusableTextImage
           title="Thornbound (developer)"
           text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam ad ipsum expedita facere, dignissimos, autem dolor odit consectetur sapiente saepe aliquam?"
@@ -46,8 +45,8 @@ export default function Home() {
         />
 
         <Features />
-        <CreditsSection/>
-        </div>
+        <CreditsSection />
+      </div>
     </>
   );
 }
