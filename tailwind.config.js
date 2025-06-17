@@ -6,11 +6,7 @@ module.exports = {
     "./src/components/**/*.{ts,tsx}",
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        cinzel: ['Cinzel', 'serif'],
-        vollkorn: ['Vollkorn', 'serif'],
-      },
+    extend: { 
     },
   },
   plugins: [],

@@ -1,4 +1,6 @@
-'use client'
+
+'use client';
+
 
 import { useState } from "react";
 import { usePathname } from "next/navigation";
@@ -13,7 +15,7 @@ const Header = () => {
     const navItems = [
         { name: 'HOME', href: '/' },
         { name: 'LORE', href: '/lore' },
-        { name: 'ABOUT US', href: '/about' },
+        { name: 'ABOUT US', href: '/aboutus' },
         { name: 'CREDITS', href: '/credits' }
     ];
 
@@ -24,8 +26,8 @@ const Header = () => {
     };
 
     return (
-        <header className="bg-black text-white w-full px-12 py-2 flex justify-between items-center relative z-10">
-            <nav className="flex gap-20 ml-10">
+        <header className="bg-black text-white w-full px-6 py-4 flex justify-between items-center flex-wrap md:flex-nowrap relative z-10">
+            <nav className="flex flex-wrap gap-6 md:gap-16 items-center">
                 {navItems.map((item) => (
                     <Link key={item.href} href={item.href} className="relative group">
                         <span
@@ -34,14 +36,17 @@ const Header = () => {
                             {item.name}
                         </span>
                         {pathname === item.href && (
-                            <span className="absolute bottom-[-18px] left-0 w-full h-0.5 bg-white"></span>
+                            <span className="absolute bottom-[-25px] left-0 w-full h-[2px] bg-white"></span>
                         )}
                     </Link>
                 ))}
             </nav>
 
-            <div className="relative">
-                <button onClick={toggleDropdown} className="w-6 h-6">
+            <div className="relative mt-4 md:mt-0">
+                <button onClick={toggleDropdown} className="flex items-center justify-center" 
+                aria-haspopup="true"
+                    aria-expanded={isDropdownOpen}
+                     aria-label="Language selector">
                     <RiGlobalLine className="w-10 h-8 text-white" />
                 </button>
 
@@ -65,5 +70,5 @@ const Header = () => {
         </header>
     );
 };
-
 export default Header;
+
