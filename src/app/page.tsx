@@ -9,6 +9,7 @@ import ReversedTextImage from "./components/ReversedImageText";
 import ReusableH3Title from "./components/ReusableH3Title/ReusableH3Title";
 import TransparentContainerReusable from "@/app/components/TransparentContainerReusable";
 import Features from "./components/Features";
+import FeatureReusableCredits from "./components/FeatureReusableCredits/FeatureReusableCredits";
 
 export default function Home() {
   return (
@@ -44,6 +45,7 @@ export default function Home() {
         />
 
         <Features />
+         <FeatureReusableCredits/>
 
         <div className="w-full p-2 flex flex-col items-center justify-center">
           <ReusableHero mainHero={true} />
@@ -54,6 +56,7 @@ export default function Home() {
             text2="lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla"
           />
           <CreditsSection />
+         
         </div>
       </div>
     </>
