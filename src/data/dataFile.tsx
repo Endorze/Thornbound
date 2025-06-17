@@ -5,7 +5,7 @@ export type DataFileProp = {
     images?: string[]
 }
 
-export const DataFile: DataFileProp[] = [
+export const IndividualsData: DataFileProp[] = [
     //tickets 003- 018
     {
         name: "LEON",
@@ -87,7 +87,7 @@ export const DataFile: DataFileProp[] = [
 
     {
         name: "AIDA",
-        description: "Hi I'm Aida, an aspiring game producer with a background in business leadership and a heart set on game development.Currently studying Agile Project Management at Futuregames.As both producer and release manager in GP3, I produce workshops, lead sprints, track progress in Jira, clear blockers, arrange playtesters, Q / A and bug tracker, handle build pipelines and ensure smooth delivery. With CEO experience, UX thinking, and a love for tech, I keep teams aligned without killing the vibe.I’ve shipped SaaS products, pitched to royalty.Now I want to help craft experiences that players love and teams enjoy building.",
+        description: "Hi I'm Aida, an aspiring game producer with a background in business leadership and a heart set on game development.Currently studying Agile Project Management at Futuregames.As both producer and release manager in GP3, I produce workshops, lead sprints, track progress in Jira, clear blockers, arrange playtesters, Q / A and bug tracker, handle build pipelines and ensure smooth delivery. With CEO experience, UX thinking, and a love for tech, I keep teams aligned without killing the vibe.I've shipped SaaS products, pitched to royalty.Now I want to help craft experiences that players love and teams enjoy building.",
         image: "./images/aida.jpg"
     },
 
@@ -101,10 +101,10 @@ export const DataFile: DataFileProp[] = [
         name: "LOTTEN",
         description: "To stand behind team 10 in this creative process has been amazing! Thornbound was one of my teams during the GP3 & Web Project, and to be part of the journey from getting to know each other, to brainstorming, to structurizing the workflow was really cool! One new thing I got to learn was working alot with JIRA.I learned the basics and then held a workshop for the team.I know this will be valuable in the future for me! Together with Aida and Ola I helped the team with Miro Structure, planning, facilitating, making sure the team was on track and not overscoping.Easier said than done! But in the end, this will be an experience I will never forget and who knows, maybe I'll work in gaming! ",
         image: "./images/lotten.jpg"
-    }
+    },
 ]
 
-export const features: DataFileProp[] = [
+export const FeaturesItems: DataFileProp[] = [
     //from tickets 022-024
     {
         name: "Spells",
@@ -125,7 +125,7 @@ export const features: DataFileProp[] = [
     },
 ]
 
-export const Credits: DataFileProp[] = [
+export const CreditsItems: DataFileProp[] = [
     // for credits page from tickets 029-030
     {
         name: "Fab and CGTrader",
