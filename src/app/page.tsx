@@ -4,7 +4,6 @@ import images from "@/data/images";
 import ReusableHero from "./components/ReusableHero/ReusableHero";
 import CreditsSection from "./components/005-credits-section";
 import H2Title from "./components/H2Title/H2Title";
-import H1Title from "./components/H1Title";
 import ReusableTextImage from "./components/Resusable-Text-Image";
 import ReversedTextImage from "./components/ReversedImageText";
 import ReusableH3Title from "./components/ReusableH3Title/ReusableH3Title";
@@ -15,8 +14,7 @@ export default function Home() {
     <>
       <div className="relative min-h-screen bg-black text-white px-6 sm:px-18 py-10 space-y-12 overflow-hidden">
 
-    
-        <H1Title text="Thornbound" size="100px" />
+
 
         <div className="space-y-10 relative z-10">
           <ReusableHero mainHero={true} />
