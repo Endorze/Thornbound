@@ -1,11 +1,11 @@
 import ReusableTextImage from "../006-Resusable-Text-Image";
 
-import { DataFile } from "../../../data";
+import { IndividualData } from "../../../data/dataFile";
 
 const AboutusRoles = () => {
 
   const targetNames = ["LEON", "ALEJANDRO", "SIMON", "GHAZALEH", "ILYA",  "EVANGELIA", "BARRY", "SHENGAN", "ERIC", "BRIAN", "DORUK", "GALINA", "JAMIE", "AIDA", "OLA", "LOTTEN"];
-  const featuresData = DataFile.filter(({name}) => targetNames.includes(name));
+  const featuresData = IndividualData.filter(({name}) => targetNames.includes(name));
 
   return (
     <>
