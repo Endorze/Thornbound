@@ -15,19 +15,19 @@ export const DataFile: DataFileProp[] = [
     {
         name: "ALEJANDRO",
         description: "Hello my name is Alejandro and I worked on both the narrative and level design for Thornbound. It has been both a very learning, challenging and fun experience! I worked on setting the story in the game both for what it is about and how it is portrayed in the game.I also worked on the level design in collaboration with Ghazaleh, we split up the work and I got to make half of the dungeon, the main hall and the upper floor in the castle! I had the opportunity to get really creative in this project where I could write a more in -depth story, ideate and implement fun puzzles and levels for the player and much more! I was fortunate to get the space and freedom to create everything through the blessing that is my team!",
-        image: ""
+        image: "./images/erics.png"
     },
 
     {
         name: "SIMON",
         description: "Hi I'm Simon, I'm usually a level designer but for this project I've been the sound designer. I'm a creative person and would like to work with anything expressive in the future, though I'm primarily focusing on level design.",
-        image: ""
+        image: "./images/erics.png"
     },
 
     {
         name: "GHAZALEH",
-        description: "",
-        image: ""
+        description: "Digital Dreamweaver & Creative Tinkerer. If my designs had a heartbeat, they'd thump to the rhythm of late-night playlists and too many cups of tea. As the 3D environment artist and visual storyteller, I sculpt worlds where players lose themselves — from distant galaxies to cozy village squares. I live in the sweet spot where art meets tech, fine-tuning every asset to flow seamlessly through the pipeline, keeping designers, animators, and coders all smiling (or at least not pulling their hair out). Sure, I sometimes forget what normal working hours' mean, but seeing our worlds breathe with life? That's my fuel. With roots in concept art, graphic design, and a passion for atmospheric lighting, I obsess over every texture, shadow, and tiny prop, because details aren't just details — they're the story.",
+        image: "./images/erics.png"
     },
 
     {
@@ -63,7 +63,7 @@ export const DataFile: DataFileProp[] = [
     {
         name: "BRIAN",
         description: "Hi, I'm one of the programmers that worked on Thornbound. My role on the team was mostly focused on UI implementation, but I frequently worked on other miscellanous features, such as some light puzzles and a checkpoint system, for example. The biggest hurdle I encountered was, honestly, myself.I don't have a ton of programming experience under my belt in general, but basically none in C++ and Unreal, so a bunch of time was spent just relearning basic stuff and learning the workflow in Unreal. However, I think that part was actually the most fun and I genuinely feel that I've gotten much better, which makes me very grateful to have worked on this game with this great team.",
-        image: ""
+        image: "./images/erics.png"
     },
 
     {
@@ -106,32 +106,32 @@ export const DataFile: DataFileProp[] = [
     {
         name: "Spells",
         description: " Zerim wields fire and lightning magic, drawn from the crystals growing within the castle. Fire burns the hottest but doesn’t reach very far, making it useful for close encounters when aiming time is limited. Lightning is cooler but has greater range, making it excellent for keeping Zerim at a distance from cursed ones.",
-        image: ""
+        image: "ola.png"
     },
 
     {
         name: "Stealth",
         description: "Even in his old age, Zerim remains light on his feet. Slowing down and sneaking up on the cursed husks allows you to take them out stealthily. Alternatively, charging in with hands ablaze, casting spells left and right, might seem tempting until you run out of crystals and the full wrath of the castle is chasing you deeper into the catacombs.",
-        image: ""
+        image: "ola.png"
     },
 
     {
         name: "Puzzles",
         description: "The castle is full of puzzles and traps. Zerim needs to travers the castles dark and winding corridors, filled with devious puzzles and traps. Unsettling tails suggested that the castle itself were out to collect your soul. ",
-        image: ""
+        image: "ola.png"
     },
 
     // for credits page from ticket 029-030
     {
         name: "Fab and CGTrader",
         description: "In addition to the assets created by our artists, assets from online marketplaces such as Fab and CGtrader were used to further assist our artists, in regards to both characters and props. These assets sourced from the marketplace have been used in a way where the artists alter the meshes or textures in order to fit the art direction of the game and to keep the involvement of the artists throughout the whole production process.",
-        image: ""
+        image: "ola.png"
     },
 
     {
         name: "Background Artwork",
         description: "We would like to give an honourable mention to our fellow classmate, Antonia Mertes, from the Animation and VFX class of 2024, Futuregames Stockholm, where she assisted with providing the illustration used on the background artwork for our webpage and Itch.IO thumbnail.",
-        image: ""
+        image: "ola.png"
     }
 ]
 
@@ -139,25 +139,25 @@ export const LoreItems: DataFileProp[] = [
     {
         name: "top (general)",
         description: "In a cabin deep in a forest you find Zerim, a once renowned adventuring mage whose granddaughter Elira has fallen gravely ill. With no remedy working he embarks on a final journey to find the rare healing flower Virellis, located deep within the walls of Castle Kravia. With its design built around the flower and its inhabitants compelled to protect it, Zerim will need to use his rusty skills to get out alive and save his granddaughter Elira.",
-        image: ""
+        image: "ola.png"
     },
 
     {
         name: "ZERIM",
         description: "After putting his mage cap on the shelf Zerim settled down decades ago to raise a family, life has been peaceful as he is now the sole caretake of his granddaughter Elira until she fell gravely ill. With every remedy, concoction and even magic tried to cure the illness he feels defeated until he gets reminded of an old tale. A flower called Virellis that can cure anything and anyone, he rifles through his journals from his past days and finds a note with the presumed location of Virellis in the forgotten Castle Kravia. He embarks on one last journey to save Elira from her grim fate.",
-        images: ["image1", "image2", "image3"]
+         images: ["ola.png", "ola.png", "ola.png"]
     },
 
     {
         name: "VIRELLIS",
         description: "There's not much information recorded of this flower, it all lies in rumours and tales which most regard as a myth.  But the rough supposed documentation tells that it can heal any injury or illness when used on another but it offers another option as well. To those who decide to use it on themselves, consuming it can grant you eternal life...Many have dared to seek out this flower to get a hold of the flower and be granted eternal life, but no one has returned.",
-        images: ["image1", "image2", "image3"]
+        images: ["ola.png", "ola.png", "ola.png"]
     },
 
     {
         name: "KRAVIA MANOR",
         description: "There once was a rich scholar, interested in the arcane and all its creations, especially the rare kind. Her name was Corryn Vaunt, it is said that she was the owner of this Castle and some speculate that she has Virellis protected inside of it, she might have even built the castle around it. Many have dared venturing into its halls, but no one has been able to come back and tell of what's inside it.",
-        images: ["image1", "image2", "image3"]
+        images: ["ola.png", "ola.png", "ola.png"]
     }
 ]
 
