@@ -29,5 +29,4 @@ const CreditsSection = () => {
     </div>
   );
 };
-
 export default CreditsSection;

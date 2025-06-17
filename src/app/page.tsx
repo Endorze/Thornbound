@@ -1,3 +1,4 @@
+
 import TransparentContainerReusable from "@/app/components/TransparentContainerReusable";
 import ImageCarousel from "./components/Carousel/Carousel";
 import images from "@/data/images";
@@ -16,7 +17,6 @@ export default function Home() {
       <div className="min-h-screen bg-black text-white px-6 sm:px-18 py-10 space-y-12">
 
         <H1Title text="Thornbound" size="100px" />
-
         <TransparentContainerReusable className="bg-black/40">
           <div className="space-y-10">
             <ReusableHero mainHero={true} />
@@ -31,7 +31,8 @@ export default function Home() {
               title="Thornbound (developer)"
               text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam ad ipsum expedita facere, dignissimos, autem dolor odit consectetur sapiente saepe aliquam?"
               image="/image.png"
-            />
+
+              />
             <ReversedTextImage />
             <ReusableH3Title text="Lorem Ipsum" size="28px" />
           </div>
@@ -45,8 +46,8 @@ export default function Home() {
         />
 
         <Features />
-        <CreditsSection />
-      </div>
+        <CreditsSection/>
+        </div>
     </>
   );
 }
