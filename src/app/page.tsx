@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> feature/005-credits-section
 import ImageCarousel from "./components/Carousel/Carousel";
 import images from "@/data/images";
 import ReusableHero from "./components/ReusableHero/ReusableHero";
 import CreditsSection from "./components/005-credits-section";
+<<<<<<< HEAD
 import H2Title from "./components/H2Title/H2Title";
 import H1Title from "./components/H1Title";
 import ReusableTextImage from "./components/Resusable-Text-Image";
@@ -15,6 +19,13 @@ export default function Home() {
   return (
      <>
      <div className="min-h-screen bg-black  px-6 sm:px-18 py-10 space-y-12">
+=======
+
+
+export default function Home() {
+  return (
+    <>
+>>>>>>> feature/005-credits-section
 
       <H1Title text="Thornbound" size="100px" />
 
