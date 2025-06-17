@@ -101,8 +101,10 @@ export const DataFile: DataFileProp[] = [
         name: "LOTTEN",
         description: "To stand behind team 10 in this creative process has been amazing! Thornbound was one of my teams during the GP3 & Web Project, and to be part of the journey from getting to know each other, to brainstorming, to structurizing the workflow was really cool! One new thing I got to learn was working alot with JIRA.I learned the basics and then held a workshop for the team.I know this will be valuable in the future for me! Together with Aida and Ola I helped the team with Miro Structure, planning, facilitating, making sure the team was on track and not overscoping.Easier said than done! But in the end, this will be an experience I will never forget and who knows, maybe I'll work in gaming! ",
         image: "./images/lotten.jpg"
-    },
+    }
+]
 
+export const features: DataFileProp[] = [
     //from tickets 022-024
     {
         name: "Spells",
@@ -121,7 +123,9 @@ export const DataFile: DataFileProp[] = [
         description: "The castle is full of puzzles and traps. Zerim needs to travers the castles dark and winding corridors, filled with devious puzzles and traps. Unsettling tails suggested that the castle itself were out to collect your soul. ",
         image: "./images/puzzle.png"
     },
+]
 
+export const Credits: DataFileProp[] = [
     // for credits page from tickets 029-030
     {
         name: "Fab and CGTrader",
