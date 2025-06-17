@@ -1,7 +1,9 @@
+import AboutusRoles from "../components/AboutusRoles";
+
 export default function AboutUsPage() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen">
-            <h1 className="text-4xl font-bold"> Welcome to the About Us</h1>
-        </div>
+       <div className="m-8 md:m-20">
+        <AboutusRoles />
+       </div>
     )
 }
