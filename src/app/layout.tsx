@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Cinzel, Almendra, Vollkorn } from 'next/font/google';
+import ScrollToTop from './components/ScrollToTop';
 import "./globals.css";
+import Header from "./components/001-Feature-Header";
 
 const cinzel = Cinzel({
   subsets: ['latin'],
@@ -10,7 +12,7 @@ const cinzel = Cinzel({
 
 const almendra = Almendra({
   subsets: ['latin'],
-  weight: ['400', '700'], // Almendra har bara vissa vikter
+  weight: ['400', '700'],
   variable: '--font-almendra',
 });
 
@@ -32,10 +34,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${cinzel.variable} ${almendra.variable} ${vollkorn.variable}`}
-      >
+      <body className={`${cinzel.variable} font-sans`}>
+        <Header />
         {children}
+      <ScrollToTop/>
       </body>
     </html>
   );
