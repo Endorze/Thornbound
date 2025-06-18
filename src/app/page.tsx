@@ -1,7 +1,8 @@
 import ImageCarousel from "./components/Carousel/Carousel";
 import images from "@/data/images";
 import ReusableHero from "./components/ReusableHero/ReusableHero";
-import OverviewSection from "./components/003-Feature/Overview-Section";
+import OverviewSection from "./components/003-FeatureOverviewSection";
+
 
 
 
