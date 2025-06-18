@@ -110,7 +110,7 @@ const Header = () => {
 
         {/* Right Globe */}
         <div className="relative">
-          <button
+          {/* <button
             onClick={toggleDropdown}
             className="flex items-center justify-center"
             aria-haspopup="true"
@@ -118,7 +118,7 @@ const Header = () => {
             aria-label="Language selector"
           >
             <RiGlobalLine className="w-8 h-8 text-white" />
-          </button>
+          </button> */}
 
           {isDropdownOpen && (
             <div className="absolute right-0 mt-2 bg-gray-800 border border-gray-700 rounded shadow-md z-50">
