@@ -1,11 +1,15 @@
 import ImageCarousel from "../components/Carousel/Carousel";
 import { LoreItems } from "@/data/dataFile";
 import TransparentContainer from "../components/TransparentContainerReusable";
+import ReusableHero from "../components/ReusableHero/ReusableHero";
 
 export default function LorePage() {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen">
-            <h1 className="text-4xl font-bold"> Welcome to the Lore</h1>
+            <ReusableHero mainHero={false} title="Lore"/>
+
+            {/**We need to put one more section here, Mariym is working on it i think??*/}
+
             <TransparentContainer>
                 <ImageCarousel
                     images={LoreItems[0]?.images ?? []}
