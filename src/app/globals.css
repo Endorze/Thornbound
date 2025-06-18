@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+<<<<<<< 016-Feature/Transparent-container-component-MA
+=======
+
 :root {
   --font-cinzel: 'Cinzel', serif;
   --font-almendra: 'Almendra', serif;
@@ -56,3 +59,6 @@ body {
 .swiper {
   --swiper-navigation-sides-offset: 40%
 }
+
+
+>>>>>>> main
