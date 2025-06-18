@@ -13,6 +13,8 @@ const CreditsSection = () => {
             title={item.name}
             image={item.image || "/image.png"}
             text={item.description}
+            reversed={index % 2 !== 0}
+
           />
         ))}
       </div>
