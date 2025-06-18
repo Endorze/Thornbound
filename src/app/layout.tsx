@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${cinzel.variable} font-sans`}>
+      <body className={`${cinzel.variable} ${vollkorn.variable} ${almendra.variable} font-sans`}>
         <Header />
         {children}
       <ScrollToTop/>

@@ -14,7 +14,7 @@ export default function TransparentContainer({
   opacity = 50
 }: TransparentContainerProps) {
   
-  const safeOpacity = Math.min(100, Math.max(0, opacity));
+  // const safeOpacity = Math.min(100, Math.max(0, opacity));
 
   return (
     <div 
