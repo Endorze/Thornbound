@@ -1,15 +1,14 @@
-import ReusableTextImage from "../006-Resusable-Text-Image";
-import H1Title from "../H1Title";
-import { DataFile } from "../../../data/images";
+import ReusableTextImage from "../Resusable-Text-Image";
+import { IndividualsData } from "../../../data/dataFile";
 
 const Features = () => {
   // Get the features data (Spells, Stealth, Puzzles) from DataFile
-  const featuresData = DataFile.filter(({name}) => name === "Spells" || name === "Stealth" || name === "Puzzles");
+  const featuresData = IndividualsData.filter(({name}) => name === "Spells" || name === "Stealth" || name === "Puzzles");
 
   return (
     <>
       <div className="text-center">
-        <H1Title text="Features" size="60px" />
+        <h2 className="text-4xl font-bold">Features</h2>
       </div>
 
       {featuresData.map((feature, index) => (
