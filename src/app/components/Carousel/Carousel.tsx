@@ -11,7 +11,7 @@ type ImageData = {
 };
 
 type Props = {
-  images: ImageData[];
+  images: string[];
   title: string,
   text1: string,
   text2: string,
@@ -20,7 +20,7 @@ type Props = {
 const ImageCarousel = ({ images, title, text1, text2 }: Props) => {
   return (
     <>
-      <div className="hidden lg:flex flex-col w-full max-w-5xl">
+      <div className="hidden lg:flex flex-col w-full max-w-5xl pt-12 pb-12">
         <div className='flex justify-center w-full'>
           <h2 style={{ fontSize: "72px" }}>{title}</h2>
         </div>
@@ -42,11 +42,11 @@ const ImageCarousel = ({ images, title, text1, text2 }: Props) => {
           modules={[Navigation]}
           className="w-full h-[400px]"
         >
-          {images.map((image, index) => (
+          {images.map((src, index) => (
             <SwiperSlide key={index} className="flex! justify-center">
               <img
-                src={image.src}
-                alt={image.alt}
+                src={src}
+                alt={`${title} image ${index + 1}`}
                 className="rounded-xl w-full object-cover h-[200px] m-auto"
               />
             </SwiperSlide>
@@ -55,7 +55,7 @@ const ImageCarousel = ({ images, title, text1, text2 }: Props) => {
         </Swiper>
       </div>
 
-      <div className="flex flex-col w-full max-w-5xl px-4 justify-center text-center lg:hidden">
+      <div className="flex flex-col w-full max-w-5xl px-4 justify-center text-center pt-4 pb-12 lg:hidden">
         <div className="flex justify-center w-full">
           <h2 style={{ fontSize: "48px" }}>{title}</h2>
         </div>
@@ -72,16 +72,17 @@ const ImageCarousel = ({ images, title, text1, text2 }: Props) => {
             modules={[Pagination]}
             className="w-full max-w-[400px]"
           >
-            {images.map((image, index) => (
-              <SwiperSlide key={index} className="flex justify-center">
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="rounded-xl w-full object-cover h-[200px] m-auto"
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+             {images.map((src, index) => (
+            <SwiperSlide key={index} className="flex! justify-center">
+              <img
+                src={src}
+                alt={`${title} image ${index + 1}`}
+                className="rounded-xl w-full object-cover h-[200px] m-auto"
+              />
+            </SwiperSlide>
+          ))}
+
+        </Swiper>
         </div>
       </div>
 
