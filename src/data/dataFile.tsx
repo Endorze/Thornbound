@@ -130,7 +130,7 @@ export const CreditsItems: DataFileProp[] = [
     {
         name: "Fab and CGTrader",
         description: "In addition to the assets created by our artists, assets from online marketplaces such as Fab and CGtrader were used to further assist our artists, in regards to both characters and props. These assets sourced from the marketplace have been used in a way where the artists alter the meshes or textures in order to fit the art direction of the game and to keep the involvement of the artists throughout the whole production process.",
-        image: "./images/credit picture1.png"
+        image: "./images/credit picture1.jpg"
     },
 
     {
