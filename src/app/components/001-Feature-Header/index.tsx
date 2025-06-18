@@ -4,7 +4,7 @@
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { RiGlobalLine } from "react-icons/ri";
+// import { RiGlobalLine } from "react-icons/ri";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 
 const Header = () => {
@@ -20,7 +20,7 @@ const Header = () => {
     { name: 'CREDITS', href: '/credits' }
   ];
 
-  const toggleDropdown = () => setIsDropdownOpen(prev => !prev);
+  // const toggleDropdown = () => setIsDropdownOpen(prev => !prev);
   const changeLanguage = (lang: "en" | "swe") => {
     setLanguage(lang);
     setIsDropdownOpen(false);

@@ -11,7 +11,7 @@ interface TransparentContainerProps {
 export default function TransparentContainer({ 
   children, 
   className = '',
-  opacity = 50
+  // opacity = 50
 }: TransparentContainerProps) {
   
   // const safeOpacity = Math.min(100, Math.max(0, opacity));
