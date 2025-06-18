@@ -47,9 +47,9 @@ export default function Home() {
 
         <Features />
         <FeatureReusableCredits />
-        <CreditsSection />
 
         <div className="w-full p-2 flex flex-col items-center justify-center">
+        <CreditsSection />
 
         </div>
         </div>
