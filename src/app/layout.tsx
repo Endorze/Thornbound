@@ -3,6 +3,7 @@ import { Cinzel, Almendra, Vollkorn } from 'next/font/google';
 import ScrollToTop from './components/ScrollToTop';
 import "./globals.css";
 import Header from "./components/001-Feature-Header";
+import ThornboundFooter from "./components/Footer/Footer";
 
 const cinzel = Cinzel({
   subsets: ['latin'],
@@ -38,6 +39,7 @@ export default function RootLayout({
         <Header />
         {children}
       <ScrollToTop/>
+      <ThornboundFooter />
       </body>
     </html>
   );

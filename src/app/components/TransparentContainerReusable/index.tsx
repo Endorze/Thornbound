@@ -18,8 +18,8 @@ export default function TransparentContainer({
 
   return (
     <div 
-      className={`relative bg-black/50 backdrop-blur-sm border border-white/30 rounded-lg p-60 shadow-lg hover:opacity-75 transition-all duration-300 ${className}`}
-      style={{ opacity: safeOpacity / 100 }}
+      className={`relative bg-black/50 backdrop-blur-sm border border-white/30 rounded-lg p-6 flex justify-center shadow-lg transition-all duration-300 w-full mt-12 ${className}`}
+      // style={{ opacity: safeOpacity / 100 }} this comment is hiding the content behind 50% black opacity instead of being in the background.
     >
       {children}
     </div>

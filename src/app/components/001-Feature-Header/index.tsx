@@ -38,7 +38,8 @@ const Header = () => {
 
         {/* Globe on right */}
         <div className="relative">
-          <button
+          {/**i disabled this button until further notice, since we dont have a language switch function yet then we have to temporarily remove it. */}
+          {/* <button
             onClick={toggleDropdown}
             className="flex items-center justify-center"
             aria-haspopup="true"
@@ -46,7 +47,7 @@ const Header = () => {
             aria-label="Language selector"
           >
             <RiGlobalLine className="w-8 h-8 text-white" />
-          </button>
+          </button> */}
 
           {isDropdownOpen && (
             <div className="absolute right-0 mt-2 bg-gray-800 border border-gray-700 rounded shadow-md z-50">
@@ -109,7 +110,7 @@ const Header = () => {
 
         {/* Right Globe */}
         <div className="relative">
-          <button
+          {/* <button
             onClick={toggleDropdown}
             className="flex items-center justify-center"
             aria-haspopup="true"
@@ -117,7 +118,7 @@ const Header = () => {
             aria-label="Language selector"
           >
             <RiGlobalLine className="w-8 h-8 text-white" />
-          </button>
+          </button> */}
 
           {isDropdownOpen && (
             <div className="absolute right-0 mt-2 bg-gray-800 border border-gray-700 rounded shadow-md z-50">
