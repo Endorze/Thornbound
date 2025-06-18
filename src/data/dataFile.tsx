@@ -156,6 +156,7 @@ export const LoreItems: DataFileProp[] = [
             "./images/zerim01.png",
             "./images/zerim02.png",
             "./images/zerim03.png",
+            "./images/zerim01.png",
         ],
     },
 
@@ -166,7 +167,8 @@ export const LoreItems: DataFileProp[] = [
         images: [
             "./images/virellis01.png",
             "./images/virellis02.png",
-            "./images/virellis03.png"
+            "./images/virellis03.png",
+            "./images/virellis01.png",
         ],
     },
 
@@ -177,7 +179,8 @@ export const LoreItems: DataFileProp[] = [
         images: [
             "./images/kravor01.png",
             "./images/kravor02.png",
-            "./images/kravor03.png"
+            "./images/kravor03.png",
+            "./images/kravor01.png",
         ]
     }
 ];
