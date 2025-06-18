@@ -22,7 +22,7 @@ const CreditsSection = () => {
         />
 
         <ReusableTextImage
-          title="Full Name — Role"
+          title=""
           image="/images/credit-picture1.png"
           text={combinedText}
         />
