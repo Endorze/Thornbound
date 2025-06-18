@@ -1,35 +1,32 @@
 'use client';
-
-import Image from "next/image";
-import { CreditsItems } from "../../../data/dataFile"; 
+import ReusableTextImage from "../Resusable-Text-Image";
 
 const CreditsSection = () => {
+  const descriptionParagraphs = [
+    "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+    "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+  ];
+
+  const combinedText = descriptionParagraphs.join("\n\n");  
+
   return (
-    <section className="relative w-full bg-cover bg-center text-white py-24 px-6" style={{ backgroundImage: "url('/images/flower-bg.jpg')" }}>
-      <div className="absolute inset-0 bg-black/50 z-0" />
+    <section className="w-full bg-black/40 backdrop-blur-md text-white px-4 py-16">
+      <div className="max-w-6xl mx-auto flex flex-col gap-12">
 
-      <div className="relative z-10 max-w-6xl mx-auto space-y-16">
-        {CreditsItems.map((item, idx) => (
-          <div
-            key={idx}
-            className="flex flex-col md:flex-row items-center justify-between bg-black/60 backdrop-blur-md border border-white rounded-xl shadow-lg p-8 gap-8"
-          >
-            <div className="flex-1 text-gray-300 font-vollkorn text-base leading-relaxed text-justify">
-              <p className="text-xl text-white font-semibold mb-4">{item.name}</p>
-              <p>{item.description}</p>
-            </div>
+        <ReusableTextImage
+          title=""  
+          image="/images/credit-picture1.png"
+          text={combinedText}
+        />
 
-            <div className="flex justify-center items-center w-full md:w-[300px] h-[300px] bg-white/10 border border-white rounded-lg overflow-hidden">
-              <Image
-                src="/images/barry.png"
-                alt={item.name}
-                width={300}
-                height={300}
-                className="object-cover w-full h-full"
-              />
-            </div>
-          </div>
-        ))}
+        <ReusableTextImage
+          title="Full Name — Role"
+          image="/images/credit-picture1.png"
+          text={combinedText}
+        />
+        
       </div>
     </section>
   );
