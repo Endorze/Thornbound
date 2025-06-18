@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-<<<<<<< 016-Feature/Transparent-container-component-MA
-=======
 
 :root {
   --font-cinzel: 'Cinzel', serif;
@@ -27,6 +25,7 @@ li {
 body {
     background-color: black;
     color: white;
+    overflow-x: hidden;
 }
 
 * {
@@ -61,4 +60,3 @@ body {
 }
 
 
->>>>>>> main
