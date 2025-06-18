@@ -6,7 +6,9 @@
 import ImageCarousel from "./components/Carousel/Carousel";
 import images from "@/data/images";
 import ReusableHero from "./components/ReusableHero/ReusableHero";
-import H2Title from "./components/H2Title/H2Title";
+import Features from "./components/Features";
+
+
 
 export default function Home() {
   return (
@@ -33,7 +35,7 @@ export default function Home() {
             text1="lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla"
             text2="lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla lorem ipsum blablabla"
           />
-          <H2Title text="Test title" size="64px" />
+          <Features />
         </div>
       </div>
     </>
