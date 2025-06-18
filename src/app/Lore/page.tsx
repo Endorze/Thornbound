@@ -1,4 +1,8 @@
 import ReusableHero from "../components/ReusableHero/ReusableHero";
+
+
+
+
 import LoreSection from "../components/LoreSection/page";
 
 export default function Lore() {
