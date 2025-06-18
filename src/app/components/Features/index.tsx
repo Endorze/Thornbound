@@ -1,14 +1,14 @@
 import ReusableTextImage from "../Resusable-Text-Image";
-import { IndividualsData } from "../../../data/dataFile";
+import { FeaturesItems   } from "../../../data/dataFile";
 
 const Features = () => {
   // Get the features data (Spells, Stealth, Puzzles) from DataFile
-  const featuresData = IndividualsData.filter(({name}) => name === "Spells" || name === "Stealth" || name === "Puzzles");
+  const featuresData = FeaturesItems.filter(({name}) => name === "Spells" || name === "Stealth" || name === "Puzzles");
 
   return (
     <>
       <div className="text-center">
-        <h2 className="text-4xl font-bold">Features</h2>
+        <h2 className="text-5xl md:text-7xl font-bold">Features</h2>
       </div>
 
       {featuresData.map((feature, index) => (
