@@ -17,7 +17,7 @@ export const IndividualsData: DataFileProp[] = [
     {
         name: "ALEJANDRO",
         description: "Hello my name is Alejandro and I worked on both the narrative and level design for Thornbound. It has been both a very learning, challenging and fun experience! I worked on setting the story in the game both for what it is about and how it is portrayed in the game.I also worked on the level design in collaboration with Ghazaleh, we split up the work and I got to make half of the dungeon, the main hall and the upper floor in the castle! I had the opportunity to get really creative in this project where I could write a more in -depth story, ideate and implement fun puzzles and levels for the player and much more! I was fortunate to get the space and freedom to create everything through the blessing that is my team!",
-        image: "./images/erics.png"
+        image: "./images/alejandro.jpg"
     },
 
     {
@@ -29,7 +29,7 @@ export const IndividualsData: DataFileProp[] = [
     {
         name: "GHAZALEH",
         description: "Digital Dreamweaver & Creative Tinkerer. If my designs had a heartbeat, they'd thump to the rhythm of late-night playlists and too many cups of tea. As the 3D environment artist and visual storyteller, I sculpt worlds where players lose themselves — from distant galaxies to cozy village squares. I live in the sweet spot where art meets tech, fine-tuning every asset to flow seamlessly through the pipeline, keeping designers, animators, and coders all smiling (or at least not pulling their hair out). Sure, I sometimes forget what normal working hours' mean, but seeing our worlds breathe with life? That's my fuel. With roots in concept art, graphic design, and a passion for atmospheric lighting, I obsess over every texture, shadow, and tiny prop, because details aren't just details — they're the story.",
-        image: "./images/erics.png"
+        image: "./images/ghazaleh.png"
     },
 
     {
@@ -106,8 +106,7 @@ export const IndividualsData: DataFileProp[] = [
 ]
 
 export const FeaturesItems: DataFileProp[] = [
-    //from tickets 021-024
-
+    //from tickets 020-024
     {
         description: "As Zerim, an experienced retired mage who has a young granddaughter Elira with a deadly illness with no working cure. Find and fight your way through the deathtrap that is Castle Kravia, filled with enemies, traps and puzzles. Unveil the forsaken secrets of previous venturers and the castle itself to get a hold of the rare and protected flower Virellis, said to cure any injury and illness or grant Immortality to whoever consumes it, to save Elira. Do you think you can make it out alive? ",
         video: "./images/video.mp4"
