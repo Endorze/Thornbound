@@ -7,12 +7,14 @@ const CreditsSection = () => {
   return (
     <section className="w-full bg-black/40 backdrop-blur-md text-white px-4 py-16">
       <div className="max-w-6xl mx-auto flex flex-col gap-12">
-        {CreditsItems.slice(0,2).map((item, index) => (
+        {CreditsItems.map((item, index) => (
           <ReusableTextImage
             key={index}
             title={item.name}
             image={item.image || "/image.png"}
             text={item.description}
+            reversed={index % 2 !== 0}
+
           />
         ))}
       </div>
