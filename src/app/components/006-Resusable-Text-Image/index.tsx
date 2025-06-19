@@ -17,7 +17,6 @@ const ReusableTextImage = ({ title, text, image, video, reversed = false }: Reus
                 </div>
                 <img src={image} alt="image" className="w-1/2 h-auto p-4" />
                 <video src={video} controls className="w-full h-auto rounded" />
-
             </div>
             <div className="absolute bottom-0 right-0 h-[1px] w-1/2 bg-gradient-to-l from-white to-transparent" />
             <div className="absolute top-0 left-0 w-[1px] h-1/2 bg-gradient-to-b from-white to-transparent" />
