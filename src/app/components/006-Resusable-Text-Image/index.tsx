@@ -1,7 +1,7 @@
 import { DataFileProp } from "../../../data/dataFile";
 
 type ReusableTextImageProp = DataFileProp & {
-    reversed?: boolean;
+  reversed?: boolean;
 }
 
 const ReusableTextImage = ({ name, description, image, video, reversed = false }: ReusableTextImageProp) => {
@@ -18,7 +18,8 @@ const ReusableTextImage = ({ name, description, image, video, reversed = false }
                     <img src={image} alt="image" className="w-1/2 h-auto p-4" />
 
                 ) : video ? (
-                    <video src={video} controls className="w-full h-auto object-cover" />
+                    <video src={video} controls className="lg:w-1/2 w-full p-4"
+ />
                 ) : null}
             </div>
             <div className="absolute bottom-0 right-0 h-[1px] w-1/2 bg-gradient-to-l from-white to-transparent" />
