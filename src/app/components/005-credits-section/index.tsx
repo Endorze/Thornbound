@@ -1,5 +1,3 @@
-'use client';
-
 import ReusableTextImage from "../Resusable-Text-Image";
 import { CreditsItems } from "../../../data/dataFile"; 
 
@@ -10,9 +8,9 @@ const CreditsSection = () => {
         {CreditsItems.map((item, index) => (
           <ReusableTextImage
             key={index}
-            title={item.name}
+            name={item.name}
             image={item.image || "/image.png"}
-            text={item.description}
+            description={item.description}
             reversed={index % 2 !== 0}
 
           />
