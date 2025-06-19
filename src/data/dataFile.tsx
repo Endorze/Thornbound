@@ -1,8 +1,9 @@
 export type DataFileProp = {
-    name: string
+    name?: string
     description: string
     image?: string
     images?: string[]
+    video?:string
 }
 
 export const IndividualsData: DataFileProp[] = [
@@ -16,19 +17,19 @@ export const IndividualsData: DataFileProp[] = [
     {
         name: "ALEJANDRO",
         description: "Hello my name is Alejandro and I worked on both the narrative and level design for Thornbound. It has been both a very learning, challenging and fun experience! I worked on setting the story in the game both for what it is about and how it is portrayed in the game.I also worked on the level design in collaboration with Ghazaleh, we split up the work and I got to make half of the dungeon, the main hall and the upper floor in the castle! I had the opportunity to get really creative in this project where I could write a more in -depth story, ideate and implement fun puzzles and levels for the player and much more! I was fortunate to get the space and freedom to create everything through the blessing that is my team!",
-        image: "./images/erics.png"
+        image: "./images/alejandro.jpg"
     },
 
     {
         name: "SIMON",
         description: "Hi I'm Simon, I'm usually a level designer but for this project I've been the sound designer. I'm a creative person and would like to work with anything expressive in the future, though I'm primarily focusing on level design.",
-        image: "./images/erics.png"
+        image: "./images/simon.png"
     },
 
     {
         name: "GHAZALEH",
         description: "Digital Dreamweaver & Creative Tinkerer. If my designs had a heartbeat, they'd thump to the rhythm of late-night playlists and too many cups of tea. As the 3D environment artist and visual storyteller, I sculpt worlds where players lose themselves — from distant galaxies to cozy village squares. I live in the sweet spot where art meets tech, fine-tuning every asset to flow seamlessly through the pipeline, keeping designers, animators, and coders all smiling (or at least not pulling their hair out). Sure, I sometimes forget what normal working hours' mean, but seeing our worlds breathe with life? That's my fuel. With roots in concept art, graphic design, and a passion for atmospheric lighting, I obsess over every texture, shadow, and tiny prop, because details aren't just details — they're the story.",
-        image: "./images/erics.png"
+        image: "./images/ghazaleh.png"
     },
 
     {
@@ -105,7 +106,12 @@ export const IndividualsData: DataFileProp[] = [
 ]
 
 export const FeaturesItems: DataFileProp[] = [
-    //from tickets 022-024
+    //from tickets 020-024
+    {
+        description: "As Zerim, an experienced retired mage who has a young granddaughter Elira with a deadly illness with no working cure. Find and fight your way through the deathtrap that is Castle Kravia, filled with enemies, traps and puzzles. Unveil the forsaken secrets of previous venturers and the castle itself to get a hold of the rare and protected flower Virellis, said to cure any injury and illness or grant Immortality to whoever consumes it, to save Elira. Do you think you can make it out alive? ",
+        video: "./images/video.mp4"
+    },
+    
     {
         name: "Spells",
         description: " Zerim wields fire and lightning magic, drawn from the crystals growing within the castle. Fire burns the hottest but doesn't reach very far, making it useful for close encounters when aiming time is limited. Lightning is cooler but has greater range, making it excellent for keeping Zerim at a distance from cursed ones.",
@@ -130,20 +136,14 @@ export const CreditsItems: DataFileProp[] = [
     {
         name: "Fab and CGTrader",
         description: "In addition to the assets created by our artists, assets from online marketplaces such as Fab and CGtrader were used to further assist our artists, in regards to both characters and props. These assets sourced from the marketplace have been used in a way where the artists alter the meshes or textures in order to fit the art direction of the game and to keep the involvement of the artists throughout the whole production process.",
-        image: "./images/credit picture1.png"
+        image: "./images/credit picture1.jpg"
     },
 
     {
         name: "Background Artwork",
         description: "We would like to give an honourable mention to our fellow classmate, Antonia Mertes, from the Animation and VFX class of 2024, Futuregames Stockholm, where she assisted with providing the illustration used on the background artwork for our webpage and Itch.IO thumbnail.",
         image: "./images/credit picture2.png"
-    },
-
-    { //ticket 025
-        name: "top (general)",
-        description: "In a cabin deep in a forest you find Zerim, a once renowned adventuring mage whose granddaughter Elira has fallen gravely ill. With no remedy working he embarks on a final journey to find the rare healing flower Virellis, located deep within the walls of Castle Kravia. With its design built around the flower and its inhabitants compelled to protect it, Zerim will need to use his rusty skills to get out alive and save his granddaughter Elira.",
-        image: "./images/general.png"
-    },
+    }
 ]
 
 export const LoreItems: DataFileProp[] = [
