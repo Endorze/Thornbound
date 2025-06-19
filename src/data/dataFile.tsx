@@ -23,7 +23,7 @@ export const IndividualsData: DataFileProp[] = [
     {
         name: "SIMON",
         description: "Hi I'm Simon, I'm usually a level designer but for this project I've been the sound designer. I'm a creative person and would like to work with anything expressive in the future, though I'm primarily focusing on level design.",
-        image: "./images/erics.png"
+        image: "./images/simon.png"
     },
 
     {
