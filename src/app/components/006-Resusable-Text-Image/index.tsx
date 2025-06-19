@@ -1,19 +1,17 @@
-type ReusableTextImageProp = {
-    title: string
-    text: string
-    image?: string
-    video?: string
-    reversed?: boolean;
+import { DataFileProp } from "../../../data/dataFile";
+
+type ReusableTextImageProp = DataFileProp & {
+  reversed?: boolean;
 }
 
-const ReusableTextImage = ({ title, text, image, video, reversed = false }: ReusableTextImageProp) => {
+const ReusableTextImage = ({ name, description, image, video, reversed = false }: ReusableTextImageProp) => {
     return (
         <div className="relative bg-black p-4 text-white border-t border-r border-white mb-8 w-full">
             <div className={`flex flex-col lg:flex-row ${reversed ? 'lg:flex-row-reverse' : ''} gap-6`}>
                 <div className="w-full p-4">
 
-                    <h1 className="pb-3">{title}</h1>
-                    <div>{text}</div>
+                    <h1 className="pb-3">{name}</h1>
+                    <div>{description}</div>
                 </div>
 
                 {image ? (
@@ -30,3 +28,4 @@ const ReusableTextImage = ({ title, text, image, video, reversed = false }: Reus
 }
 
 export default ReusableTextImage;
+
