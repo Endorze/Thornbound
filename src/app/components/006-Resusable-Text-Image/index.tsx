@@ -1,7 +1,7 @@
 import { DataFileProp } from "../../../data/dataFile";
 
 type ReusableTextImageProp = DataFileProp & {
-  reversed?: boolean;
+    reversed?: boolean;
 }
 
 const ReusableTextImage = ({ name, description, image, video, reversed = false }: ReusableTextImageProp) => {
