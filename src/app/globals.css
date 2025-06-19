@@ -21,10 +21,10 @@ li {
   font-family: var(--font-vollkorn);
 }
 
-
 body {
     background-color: black;
     color: white;
+    overflow-x: hidden;
 }
 
 * {
@@ -57,5 +57,3 @@ body {
 .swiper {
   --swiper-navigation-sides-offset: 40%
 }
-
-

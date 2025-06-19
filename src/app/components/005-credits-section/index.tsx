@@ -1,5 +1,7 @@
 'use client';
-import ReusableTextImage from "../006-Resusable-Text-Image";
+
+import ReusableTextImage from "../Resusable-Text-Image";
+import { CreditsItems } from "../../../data/dataFile"; 
 
 const CreditsSection = () => {
   const descriptionParagraphs = [
@@ -14,19 +16,16 @@ const CreditsSection = () => {
   return (
     <section className="w-full bg-black/40 backdrop-blur-md text-white px-4 py-16">
       <div className="max-w-6xl mx-auto flex flex-col gap-12">
+        {CreditsItems.map((item, index) => (
+          <ReusableTextImage
+            key={index}
+            title={item.name}
+            image={item.image || "/image.png"}
+            text={item.description}
+            reversed={index % 2 !== 0}
 
-        <ReusableTextImage
-          title=""  
-          image="/images/credit-picture1.png"
-          text={combinedText}
-        />
-
-        <ReusableTextImage
-          title=""
-          image="/images/credit-picture1.png"
-          text={combinedText}
-        />
-        
+          />
+        ))}
       </div>
     </section>
   );
