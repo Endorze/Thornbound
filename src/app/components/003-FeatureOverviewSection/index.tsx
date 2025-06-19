@@ -1,6 +1,7 @@
 
-import ReusableTextImage from "../006-Resusable-Text-Image";
+
 import { FeaturesItems   } from "../../../data/dataFile";
+import ReusableTextImage from "../006-Resusable-Text-Image";
 
 const OverviewSection = () => {
     return (
@@ -22,3 +23,4 @@ const OverviewSection = () => {
 };
 
 export default OverviewSection;
+
