@@ -10,15 +10,15 @@ interface TransparentContainerProps {
 export default function TransparentContainer({ 
   children, 
   className = '',
-  opacity = 50
+  // opacity = 50
 }: TransparentContainerProps) {
   
-  const safeOpacity = Math.min(100, Math.max(0, opacity));
+  // const safeOpacity = Math.min(100, Math.max(0, opacity));
 
   return (
     <div 
-      className={`relative bg-black/50 border border-white/30 rounded-lg p-60 shadow-[0_0_40px_rgba(0,0,255,0.3)] hover:opacity-50 transition-all duration-300 ${className}`}
-      style={{ opacity: safeOpacity / 100 }}
+      className={`relative bg-black/50 backdrop-blur-sm border border-white/30 rounded-lg p-6 flex justify-center shadow-lg transition-all duration-300 w-full mt-12 ${className}`}
+      // style={{ opacity: safeOpacity / 100 }} this comment is hiding the content behind 50% black opacity instead of being in the background.
     >
       {children}
     </div>
