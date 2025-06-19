@@ -7,8 +7,8 @@ export default function AboutUsPage() {
     return (
        <div className="flex flex-col justify-center items-center w-full">
         <ReusableHero title="About Us" mainHero={false}/>
-         <FeatureAboutUs />
         <MaxWidthContainer>
+        <FeatureAboutUs />
         <AboutusRoles />
         </MaxWidthContainer>
        </div>
