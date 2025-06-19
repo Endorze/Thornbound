@@ -143,13 +143,7 @@ export const CreditsItems: DataFileProp[] = [
         name: "Background Artwork",
         description: "We would like to give an honourable mention to our fellow classmate, Antonia Mertes, from the Animation and VFX class of 2024, Futuregames Stockholm, where she assisted with providing the illustration used on the background artwork for our webpage and Itch.IO thumbnail.",
         image: "./images/credit picture2.png"
-    },
-
-    { //ticket 025
-        name: "top (general)",
-        description: "In a cabin deep in a forest you find Zerim, a once renowned adventuring mage whose granddaughter Elira has fallen gravely ill. With no remedy working he embarks on a final journey to find the rare healing flower Virellis, located deep within the walls of Castle Kravia. With its design built around the flower and its inhabitants compelled to protect it, Zerim will need to use his rusty skills to get out alive and save his granddaughter Elira.",
-        image: "./images/general.png"
-    },
+    }
 ]
 
 export const LoreItems: DataFileProp[] = [
