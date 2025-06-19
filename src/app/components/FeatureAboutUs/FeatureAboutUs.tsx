@@ -13,9 +13,9 @@ export default function FeatureAboutUs() {
 
           {/* Image */}
           <img
-            src="./images/kravor03.png"
+            src="/grouppic.jpg"
             alt="Group Photo"
-            className="w-full sm:w-3/4 md:w-1/2 mx-auto rounded-md object-cover"
+            className="w-full mx-auto rounded-md object-cover"
           />
 
           {/* Teams */}

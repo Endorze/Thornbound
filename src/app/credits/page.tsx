@@ -1,7 +1,9 @@
+import ReusableHero from "../components/ReusableHero/ReusableHero";
+
 export default function CreditsPage() {
     return (
-        <div className="flex flex-col text-center items-center justify-center min-h-screen">
-            <h1 className="text-4xl font-bold"> Welcome to the Credits</h1>
+        <div className="flex flex-col text-center items-center justify-center">
+            <ReusableHero title="Credits" mainHero={false}/>
         </div>
     )
 }
