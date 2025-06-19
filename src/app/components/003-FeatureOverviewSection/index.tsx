@@ -12,7 +12,7 @@ const OverviewSection = () => {
             </div>
 
             <ReusableTextImage
-               
+
                 description="As Zerim, an experienced retired mage who has a young granddaughter Elira with a deadly illness with no working cure. 
                       Find and fight your way through the deathtrap that is Castle Kravia, filled with enemies, traps and puzzles. Unveil the forsaken secrets of previous venturers and the castle itself to get a hold of the rare and protected flower Virellis, said to cure any injury and illness or grant Immortality to whoever consumes it, to save Elira. 
                       Do you think you can make it out alive?"
@@ -24,4 +24,3 @@ const OverviewSection = () => {
 };
 
 export default OverviewSection;
-
