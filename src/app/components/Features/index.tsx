@@ -7,15 +7,15 @@ const Features = () => {
 
   return (
     <>
-      <div className="text-center">
+      <div className="text-center pt-12 pb-12">
         <h2 className="text-5xl md:text-7xl font-bold">Features</h2>
       </div>
 
       {featuresData.map((feature, index) => (
         <ReusableTextImage
           key={feature.name}
-          title={feature.name}
-          text={feature.description}
+          name={feature.name}
+          description={feature.description}
           image={feature.image || "/images/angel.png"}
           reversed={index === 2}
         />

@@ -3,13 +3,15 @@ import { LoreItems } from "@/data/dataFile";
 import TransparentContainer from "../components/TransparentContainerReusable";
 import ReusableHero from "../components/ReusableHero/ReusableHero";
 import MaxWidthContainer from "../components/MaxWidthContainer/MaxWidthContainer";
+import LoreSection from "../components/LoreSection/LoreSection";
+
 
 export default function LorePage() {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen">
             <ReusableHero mainHero={false} title="Lore" />
 
-            {/**We need to put one more section here, Mariym is working on it i think??*/}
+               <LoreSection />
 
             <MaxWidthContainer>
 
