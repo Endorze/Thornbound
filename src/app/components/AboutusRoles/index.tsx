@@ -13,8 +13,8 @@ const AboutusRoles = () => {
       {featuresData.map((feature) => (
         <ReusableTextImage
           key={feature.name}
-          title={feature.name}
-          text={feature.description}
+          name={feature.name}
+          description={feature.description}
           image={feature.image || "/images/thornbound.png"}
         />
       ))}
