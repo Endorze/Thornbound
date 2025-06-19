@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import MaxWidthContainer from "./components/MaxWidthContainer/MaxWidthContainer";
 import ReusableHero from "./components/ReusableHero/ReusableHero";
 import Features from "./components/Features";
@@ -15,13 +14,4 @@ export default function Home() {
       </div>
     </>
       );
-=======
-
-export default function Home() {
-  return (
-  
-  <div>Hello</div>
-
-  );
->>>>>>> 006-Feature/ReusableText-Image
 }

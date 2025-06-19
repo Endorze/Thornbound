@@ -35,11 +35,8 @@ export const IndividualsData: DataFileProp[] = [
     {
         name: "ILYA",
         description: "Art Wizard & Workflow Whisperer, If pixels could talk, mine would shout, 'Crafted with love… and probably at 2 AM.' As the environment artist and pipeline problem - solver, I made sure everything looked beautiful and flowed smoothly between the art department, designers, and animators, like a well - oiled creativity machine. I may have a tiny habit of overworking(okay, maybe not that tiny), but when I see our game world come alive, I just can't stop smiling.There's something magical about seeing what we've built together as a team—it's better than caffeine. With a background in UI / UX design and photography, I bring a sharp eye for detail and a love for visual harmony",
-<<<<<<< HEAD
-        image: "./images/erics.png"
-=======
         image: "./images/llya.png"
->>>>>>> 006-Feature/ReusableText-Image
+
     },
 
     {
@@ -160,10 +157,6 @@ export const LoreItems: DataFileProp[] = [
             "./images/zerim01.png",
             "./images/zerim02.png",
             "./images/zerim03.png",
-<<<<<<< HEAD
-            "./images/zerim01.png",
-=======
->>>>>>> 006-Feature/ReusableText-Image
         ],
     },
 
@@ -174,12 +167,9 @@ export const LoreItems: DataFileProp[] = [
         images: [
             "./images/virellis01.png",
             "./images/virellis02.png",
-<<<<<<< HEAD
             "./images/virellis03.png",
             "./images/virellis01.png",
-=======
-            "./images/virellis03.png"
->>>>>>> 006-Feature/ReusableText-Image
+
         ],
     },
 
@@ -190,12 +180,9 @@ export const LoreItems: DataFileProp[] = [
         images: [
             "./images/kravor01.png",
             "./images/kravor02.png",
-<<<<<<< HEAD
             "./images/kravor03.png",
             "./images/kravor01.png",
-=======
-            "./images/kravor03.png"
->>>>>>> 006-Feature/ReusableText-Image
+
         ]
     }
 ];
