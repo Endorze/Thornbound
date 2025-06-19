@@ -10,7 +10,7 @@ const CreditsSection = () => {
         {CreditsItems.map((item, index) => (
           <ReusableTextImage
             key={index}
-            title={item.name}
+            name={item.name}
             image={item.image || "/image.png"}
             text={item.description}
             reversed={index % 2 !== 0}
