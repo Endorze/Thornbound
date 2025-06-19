@@ -14,8 +14,8 @@ const Features = () => {
       {featuresData.map((feature, index) => (
         <ReusableTextImage
           key={feature.name}
-          title={feature.name}
-          text={feature.description}
+          name={feature.name}
+          description={feature.description}
           image={feature.image || "/images/angel.png"}
           reversed={index === 2}
         />

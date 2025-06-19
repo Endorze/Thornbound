@@ -4,8 +4,8 @@ import { IndividualsData } from "../../../data/dataFile";
 
 const AboutusRoles = () => {
 
-  const targetNames = ["LEON", "ALEJANDRO", "SIMON", "GHAZALEH", "ILYA",  "EVANGELIA", "BARRY", "SHENGAN", "ERIC", "BRIAN", "DORUK", "GALINA", "JAMIE", "AIDA", "OLA", "LOTTEN"];
-  const featuresData = IndividualsData.filter(({name}) => targetNames.includes(name));
+  const targetNames = ["LEON", "ALEJANDRO", "SIMON", "GHAZALEH", "ILYA", "EVANGELIA", "BARRY", "SHENGAN", "ERIC", "BRIAN", "DORUK", "GALINA", "JAMIE", "AIDA", "OLA", "LOTTEN"];
+  const featuresData = IndividualsData.filter(({ name }) => targetNames.includes(name));
 
   return (
     <>
@@ -13,8 +13,8 @@ const AboutusRoles = () => {
       {featuresData.map((feature) => (
         <ReusableTextImage
           key={feature.name}
-          title={feature.name}
-          text={feature.description}
+          name={feature.name}
+          description={feature.description}
           image={feature.image || "/images/thornbound.png"}
         />
       ))}
