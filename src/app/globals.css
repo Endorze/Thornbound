@@ -1,4 +1,6 @@
 @import "tailwindcss";
+
+
 :root {
   --font-cinzel: 'Cinzel', serif;
   --font-almendra: 'Almendra', serif;
@@ -22,6 +24,7 @@ li {
 body {
     background-color: black;
     color: white;
+    overflow-x: hidden;
 }
 
 * {
@@ -54,3 +57,5 @@ body {
 .swiper {
   --swiper-navigation-sides-offset: 40%
 }
+
+
