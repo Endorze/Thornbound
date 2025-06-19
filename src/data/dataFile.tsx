@@ -1,8 +1,9 @@
 export type DataFileProp = {
-    name: string
+    name?: string
     description: string
     image?: string
     images?: string[]
+    video?:string
 }
 
 export const IndividualsData: DataFileProp[] = [
@@ -105,7 +106,13 @@ export const IndividualsData: DataFileProp[] = [
 ]
 
 export const FeaturesItems: DataFileProp[] = [
-    //from tickets 022-024
+    //from tickets 021-024
+
+    {
+        description: "As Zerim, an experienced retired mage who has a young granddaughter Elira with a deadly illness with no working cure. Find and fight your way through the deathtrap that is Castle Kravia, filled with enemies, traps and puzzles. Unveil the forsaken secrets of previous venturers and the castle itself to get a hold of the rare and protected flower Virellis, said to cure any injury and illness or grant Immortality to whoever consumes it, to save Elira. Do you think you can make it out alive? ",
+        video: "./images/video.mp4"
+    },
+    
     {
         name: "Spells",
         description: " Zerim wields fire and lightning magic, drawn from the crystals growing within the castle. Fire burns the hottest but doesn't reach very far, making it useful for close encounters when aiming time is limited. Lightning is cooler but has greater range, making it excellent for keeping Zerim at a distance from cursed ones.",
@@ -130,7 +137,7 @@ export const CreditsItems: DataFileProp[] = [
     {
         name: "Fab and CGTrader",
         description: "In addition to the assets created by our artists, assets from online marketplaces such as Fab and CGtrader were used to further assist our artists, in regards to both characters and props. These assets sourced from the marketplace have been used in a way where the artists alter the meshes or textures in order to fit the art direction of the game and to keep the involvement of the artists throughout the whole production process.",
-        image: "./images/credit picture1.png"
+        image: "./images/credit picture1.jpg"
     },
 
     {
