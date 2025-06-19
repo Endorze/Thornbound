@@ -1,6 +1,5 @@
-import TransparentContainerReusable from "@/app/components/TransparentContainerReusable";
-import ImageCarousel from "./components/Carousel/Carousel";
-import images from "@/data/images";
+import Features from "./components/Features";
+import MaxWidthContainer from "./components/MaxWidthContainer/MaxWidthContainer";
 import ReusableHero from "./components/ReusableHero/ReusableHero";
 import CreditsSection from "./components/005-credits-section";
 import H2Title from "./components/H2Title/H2Title";
@@ -13,46 +12,12 @@ import FeatureReusableCredits from "./components/FeatureReusableCredits/FeatureR
 export default function Home() {
   return (
     <>
-      <div className="relative min-h-screen bg-black text-white px-6 sm:px-18 py-10 space-y-12 overflow-hidden">
-
-
-
-        <div className="space-y-10 relative z-10">
-          <ReusableHero mainHero={true} />
-          <H2Title text="This is Yasmines test title" size="72px" />
-          <TransparentContainerReusable className="relative max-w-4xl w-full text-center p-10">
-             {/* Inner glow */}
-           <div className="absolute inset-0 bg-blue-400/10 rounded-xl blur-2xl z-0"></div>
-           <h2 className="relative z-10 text-3xl font-semibold text-white">
-               This is inside the transparent container
-                     </h2>
-            </TransparentContainerReusable>
-
-          <ReusableTextImage
-            title="Thornbound (developer)"
-            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam ad ipsum expedita facere, dignissimos, autem dolor odit consectetur sapiente saepe aliquam?"
-            image="/image.png"
-          />
-
-          <ReversedTextImage />
-          <ReusableH3Title text="Lorem Ipsum" size="28px" />
-        </div>
-
-        <ReusableTextImage
-          title="Thornbound (developer)"
-          text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam ad ipsum expedita facere, dignissimos, autem dolor odit consectetur sapiente saepe aliquam?"
-          image="/image.png"
-          reversed={true}
-        />
-
-        <Features />
-        <FeatureReusableCredits />
-
-        <div className="w-full p-2 flex flex-col items-center justify-center">
-        <CreditsSection />
-
-        </div>
-        </div>
-      </>
+      <div className="flex flex-col justify-center">
+          <ReusableHero mainHero={true}/>
+          <MaxWidthContainer>
+          <Features />
+          </MaxWidthContainer>
+      </div>
+    </>
       );
 }
