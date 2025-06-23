@@ -1,10 +1,12 @@
-   'use client';
+'use client';
 
 import { useState, useEffect } from 'react';
 import { ChevronUp } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
+  const { t } = useLanguage();
 
   const toggleVisibility = () => {
     setIsVisible(window.pageYOffset > 300);
@@ -24,7 +26,7 @@ export default function ScrollToTop() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          aria-label="Scroll to top"
+          aria-label={t('ui.scrollToTop')}
           className="fixed bottom-8 right-8 z-50 p-4 rounded-full shadow-2xl transition-all duration-300 transform active:scale-95 hover:scale-110 group focus:outline-none focus:ring-2 focus:ring-offset-2"
           style={{
             backgroundColor: '#2e5b88',
@@ -45,4 +47,3 @@ export default function ScrollToTop() {
     </>
   );
 }
- 

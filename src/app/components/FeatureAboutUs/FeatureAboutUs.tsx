@@ -1,6 +1,11 @@
+'use client';
+
 import TransparentContainer from "@/app/components/TransparentContainerReusable";
+import { useLanguage } from "../../../contexts/LanguageContext";
 
 export default function FeatureAboutUs() {
+  const { t } = useLanguage();
+
   return (
     <section className="w-full min-h-screen bg-black text-white py-20 px-4 flex justify-center">
       <TransparentContainer className="w-full max-w-6xl p-6 md:p-10">
@@ -8,22 +13,22 @@ export default function FeatureAboutUs() {
 
           {/* Intro text */}
           <p className="text-left leading-relaxed text-sm sm:text-base">
-            Our team consists of passionate designers, programmers and artists who have together shaped Thornbound. With diverse skills and international talent, we created this experience through months of creativity, iteration and dedication.
+            {t('aboutUs.teamDescription')}
           </p>
 
           {/* Image */}
           <img
             src="/grouppic.jpg"
-            alt="Group Photo"
+            alt={t('aboutUs.groupPhotoAlt')}
             className="w-full mx-auto rounded-md object-cover"
           />
 
           {/* Teams */}
           <div className="flex flex-col md:flex-row justify-between gap-10">
-            
+
             {/* Development Team */}
             <div className="flex-1 flex flex-col space-y-2 text-left">
-              <h3 className="text-2xl font-semibold">Development Team</h3>
+              <h3 className="text-2xl font-semibold">{t('aboutUs.developmentTeam')}</h3>
               {[
                 "Leon Cederberg (Product Owner and Designer)",
                 "Alejandro Hernandez Cortina (Narrative and Level Designer)",
@@ -45,7 +50,7 @@ export default function FeatureAboutUs() {
 
             {/* Leadership Team */}
             <div className="flex-1 flex flex-col space-y-2 text-left">
-              <h3 className="text-2xl font-semibold">Leadership Team</h3>
+              <h3 className="text-2xl font-semibold">{t('aboutUs.leadershipTeam')}</h3>
               {[
                 "Aida Ghorban Ebrahimi (Game Producer and Release Manager)",
                 "Ola Gerdin (Release Manager)",

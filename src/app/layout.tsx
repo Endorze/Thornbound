@@ -4,6 +4,7 @@ import ScrollToTop from './components/ScrollToTop';
 import "./globals.css";
 import Header from "./components/001-Feature-Header";
 import ThornboundFooter from "./components/Footer/Footer";
+import { LanguageProvider } from '../contexts/LanguageContext';
 
 const cinzel = Cinzel({
   subsets: ['latin'],
@@ -36,10 +37,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${cinzel.variable} ${vollkorn.variable} ${almendra.variable} font-sans`}>
-        <Header />
-        {children}
-      <ScrollToTop/>
-      <ThornboundFooter />
+        <LanguageProvider>
+          <Header />
+          {children}
+          <ScrollToTop/>
+          <ThornboundFooter />
+        </LanguageProvider>
       </body>
     </html>
   );

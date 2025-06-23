@@ -1,27 +1,27 @@
-
 'use client';
 
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-// import { RiGlobalLine } from "react-icons/ri";
+import { RiGlobalLine } from "react-icons/ri";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
+import { useLanguage } from "../../../contexts/LanguageContext";
 
 const Header = () => {
   const pathname = usePathname();
-  const [language, setLanguage] = useState<"en" | "swe">("en");
+  const { language, setLanguage, t } = useLanguage();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
-    { name: 'HOME', href: '/' },
-    { name: 'LORE', href: '/lore' },
-    { name: 'ABOUT US', href: '/aboutus' },
-    { name: 'CREDITS', href: '/credits' }
+    { name: t('nav.home'), href: '/' },
+    { name: t('nav.lore'), href: '/lore' },
+    { name: t('nav.aboutUs'), href: '/aboutus' },
+    { name: t('nav.credits'), href: '/credits' }
   ];
 
-  // const toggleDropdown = () => setIsDropdownOpen(prev => !prev);
-  const changeLanguage = (lang: "en" | "swe") => {
+  const toggleDropdown = () => setIsDropdownOpen(prev => !prev);
+  const changeLanguage = (lang: "en" | "sv") => {
     setLanguage(lang);
     setIsDropdownOpen(false);
   };
@@ -32,22 +32,21 @@ const Header = () => {
       {/* Mobile Header */}
       <div className="flex justify-between items-center md:hidden">
         {/* Hamburger */}
-        <button onClick={toggleMenu} aria-label="Toggle menu">
+        <button onClick={toggleMenu} aria-label={t('ui.toggleMenu')}>
           {menuOpen ? <HiOutlineX className="w-8 h-8" /> : <HiOutlineMenu className="w-8 h-8" />}
         </button>
 
         {/* Globe on right */}
         <div className="relative">
-          {/**i disabled this button until further notice, since we dont have a language switch function yet then we have to temporarily remove it. */}
-          {/* <button
+          <button
             onClick={toggleDropdown}
             className="flex items-center justify-center"
             aria-haspopup="true"
             aria-expanded={isDropdownOpen}
-            aria-label="Language selector"
+            aria-label={t('language.switchLanguage')}
           >
             <RiGlobalLine className="w-8 h-8 text-white" />
-          </button> */}
+          </button>
 
           {isDropdownOpen && (
             <div className="absolute right-0 mt-2 bg-gray-800 border border-gray-700 rounded shadow-md z-50">
@@ -55,13 +54,13 @@ const Header = () => {
                 onClick={() => changeLanguage("en")}
                 className={`block px-4 py-2 text-sm w-full text-left hover:bg-gray-700 ${language === 'en' ? 'text-white' : 'text-gray-400'}`}
               >
-                English
+                {t('language.english')}
               </button>
               <button
-                onClick={() => changeLanguage("swe")}
-                className={`block px-4 py-2 text-sm w-full text-left hover:bg-gray-700 ${language === 'swe' ? 'text-white' : 'text-gray-400'}`}
+                onClick={() => changeLanguage("sv")}
+                className={`block px-4 py-2 text-sm w-full text-left hover:bg-gray-700 ${language === 'sv' ? 'text-white' : 'text-gray-400'}`}
               >
-                Svenska
+                {t('language.swedish')}
               </button>
             </div>
           )}
@@ -99,26 +98,24 @@ const Header = () => {
                 {item.name}
               </span>
               <span
-                className={`absolute bottom-[-25px] left-0 h-[2px] bg-white transition-all duration-300 
+                className={`absolute bottom-[-25px] left-0 h-[2px] bg-white transition-all duration-300
       ${pathname === item.href ? 'w-full' : 'w-0 group-hover:w-full'}`}
               ></span>
             </Link>
-
-
           ))}
         </nav>
 
         {/* Right Globe */}
         <div className="relative">
-          {/* <button
+          <button
             onClick={toggleDropdown}
             className="flex items-center justify-center"
             aria-haspopup="true"
             aria-expanded={isDropdownOpen}
-            aria-label="Language selector"
+            aria-label={t('language.switchLanguage')}
           >
             <RiGlobalLine className="w-8 h-8 text-white" />
-          </button> */}
+          </button>
 
           {isDropdownOpen && (
             <div className="absolute right-0 mt-2 bg-gray-800 border border-gray-700 rounded shadow-md z-50">
@@ -126,13 +123,13 @@ const Header = () => {
                 onClick={() => changeLanguage("en")}
                 className={`block px-4 py-2 text-sm w-full text-left hover:bg-gray-700 ${language === 'en' ? 'text-white' : 'text-gray-400'}`}
               >
-                English
+                {t('language.english')}
               </button>
               <button
-                onClick={() => changeLanguage("swe")}
-                className={`block px-4 py-2 text-sm w-full text-left hover:bg-gray-700 ${language === 'swe' ? 'text-white' : 'text-gray-400'}`}
+                onClick={() => changeLanguage("sv")}
+                className={`block px-4 py-2 text-sm w-full text-left hover:bg-gray-700 ${language === 'sv' ? 'text-white' : 'text-gray-400'}`}
               >
-                Svenska
+                {t('language.swedish')}
               </button>
             </div>
           )}

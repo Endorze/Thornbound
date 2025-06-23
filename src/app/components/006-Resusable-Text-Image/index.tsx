@@ -1,10 +1,15 @@
+'use client';
+
 import { DataFileProp } from "../../../data/dataFile";
+import { useLanguage } from "../../../contexts/LanguageContext";
 
 type ReusableTextImageProp = DataFileProp & {
   reversed?: boolean;
 }
 
 const ReusableTextImage = ({ name, description, image, video, reversed = false }: ReusableTextImageProp) => {
+    const { t } = useLanguage();
+
     return (
         <div className="relative bg-black p-4 text-white border-t border-r border-white mb-8 w-full">
             <div className={`flex flex-col lg:flex-row ${reversed ? 'lg:flex-row-reverse' : ''} gap-6`}>
@@ -15,7 +20,7 @@ const ReusableTextImage = ({ name, description, image, video, reversed = false }
                 </div>
 
                 {image ? (
-                    <img src={image} alt="image" className="w-1/2 h-auto p-4" />
+                    <img src={image} alt={t('ui.image')} className="w-1/2 h-auto p-4" />
 
                 ) : video ? (
                     <video src={video} controls className="lg:w-1/2 w-full p-4"
