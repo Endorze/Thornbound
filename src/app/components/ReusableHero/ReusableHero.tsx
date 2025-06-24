@@ -23,7 +23,7 @@ const ReusableHero = ({ title, mainHero }: Props) => {
                     <h1 className="">{t('hero.downloadTitle')}</h1>
                 </div>
             ) : (
-                <h1 style={{ fontSize: "92px" }} className="flex items-center">{title}</h1>
+                <h1 className="flex items-center text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[92px]">{title}</h1>
             )}
         </div>
     )
