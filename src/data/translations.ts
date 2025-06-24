@@ -103,7 +103,7 @@ export const translations = {
     // Navigation
     nav: {
       home: 'HEM',
-      lore: 'BAKGRUNDHISTORIA',
+      lore: 'BAKGRUND',
       aboutUs: 'OM OSS',
       credits: 'ERKÄNNANDEN'
     },
