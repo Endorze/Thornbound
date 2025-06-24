@@ -1,27 +1,31 @@
+'use client';
+
 import ReusableTextImage from "../006-Resusable-Text-Image";
-import { FeaturesItems   } from "../../../data/dataFile";
+import { useLanguage, useTranslatedData } from "../../../contexts/LanguageContext";
+import { DataFileProp } from "../../../data/dataFile";
 
 const Features = () => {
-  // Get the features data (Spells, Stealth, Puzzles) from DataFile
-  const featuresData = FeaturesItems.filter(({name}) => name === "Spells" || name === "Stealth" || name === "Puzzles");
+  const { t } = useLanguage();
+  // Get the features data (Spells, Stealth, Puzzles) from translated data
+  const { FeaturesItems } = useTranslatedData();
+
+  const featuresList = FeaturesItems.slice(1);
 
   return (
-    <>
-      <div className="text-center pt-12 pb-12">
-        <h2 className="text-5xl md:text-7xl font-bold">Features</h2>
+    <section className="w-full py-16">
+      <div className="max-w-6xl mx-auto flex flex-col gap-12">
+      <h2 className="text-4xl md:text-6xl font-bold text-center">{t('features.title')}</h2>
+        {featuresList.map((feature: DataFileProp, index: number) => (
+          <ReusableTextImage
+            key={feature.name || index}
+            name={feature.name}
+            description={feature.description}
+            image={feature.image || "/images/thornbound.png"}
+            reversed={index % 2 === 1}
+          />
+        ))}
       </div>
-
-      {featuresData.map((feature, index) => (
-        <ReusableTextImage
-          key={feature.name}
-          name={feature.name}
-          description={feature.description}
-          image={feature.image || "/images/angel.png"}
-          reversed={index === 2}
-        />
-      ))}
-
-    </>
+    </section>
   );
 };
 

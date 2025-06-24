@@ -2,21 +2,27 @@
 
 import Image from "next/image";
 import TransparentContainerReusable from "@/app/components/TransparentContainerReusable";
+import ImageCarousel from "../Carousel/Carousel";
+import { DataFileProp } from "../../../data/dataFile";
+import { useLanguage } from "../../../contexts/LanguageContext";
 
-export default function LoreSection() {
+interface LoreSectionProps {
+  loreItems: DataFileProp[];
+}
+
+export default function LoreSection({ loreItems }: LoreSectionProps) {
+  const { t } = useLanguage();
+
   return (
     <div className="w-full px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
       <div className="max-w-6xl mx-auto">
-        
+
         <TransparentContainerReusable className="p-6 sm:p-10 shadow-lg text-white flex flex-col items-center gap-8" opacity={100}>
 
           {/* Top paragraph */}
           <div className="text-gray-300 text-base sm:text-1g leading-relaxed text-center w-full">
             <p>
-              In a cabin deep in a forest you find Zerim, a once renowned adventuring mage whose granddaughter Elira has fallen gravely ill. 
-              With no remedy working, he embarks on a final journey to find the rare healing flower Virellis, located deep within the walls of Castle Kravia. 
-              With its design built around the flower and its inhabitants compelled to protect it, Zerim will need to use his rusty skills to get out alive 
-              and save his granddaughter Elira.
+              {t('lore.subtitle')}
             </p>
           </div>
 
@@ -24,7 +30,7 @@ export default function LoreSection() {
           <div className="w-full rounded-lg overflow-hidden shadow-xl">
             <Image
               src="/images/general.png"
-              alt="Zerim's story illustration"
+              alt={t('lore.storyIllustrationAlt')}
               width={800}
               height={900}
               className="w-full h-auto object-cover rounded-md"
@@ -33,6 +39,18 @@ export default function LoreSection() {
           </div>
 
         </TransparentContainerReusable>
+
+        {/* Character sections */}
+        {loreItems.map((item, index) => (
+          <TransparentContainerReusable key={index} className="mt-8">
+            <ImageCarousel
+              images={item.images ?? []}
+              title={item.name ?? t('ui.unknown')}
+              text1={item.description ?? ""}
+              text2=""
+            />
+          </TransparentContainerReusable>
+        ))}
       </div>
     </div>
   );

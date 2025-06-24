@@ -2,6 +2,7 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -19,6 +20,8 @@ type Props = {
 };
 
 const ImageCarousel = ({ images, title, text1, text2 }: Props) => {
+  const { t } = useLanguage();
+
   return (
     <>
       <div className="hidden lg:flex flex-col w-full max-w-5xl pt-12 pb-12">
@@ -47,7 +50,7 @@ const ImageCarousel = ({ images, title, text1, text2 }: Props) => {
             <SwiperSlide key={index} className="flex! justify-center">
               <img
                 src={src}
-                alt={`${title} image ${index + 1}`}
+                alt={`${title} ${t('ui.image')} ${index + 1}`}
                 className="rounded-xl w-full object-cover h-[200px] m-auto"
               />
             </SwiperSlide>
@@ -77,7 +80,7 @@ const ImageCarousel = ({ images, title, text1, text2 }: Props) => {
             <SwiperSlide key={index} className="flex! justify-center">
               <img
                 src={src}
-                alt={`${title} image ${index + 1}`}
+                alt={`${title} ${t('ui.image')} ${index + 1}`}
                 className="rounded-xl w-full object-cover h-[200px] m-auto"
               />
             </SwiperSlide>
