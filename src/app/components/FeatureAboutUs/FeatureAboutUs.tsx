@@ -35,7 +35,7 @@ export default function FeatureAboutUs() {
                 "Simon Finér (Designer)",
                 "Ghazaleh Shahabirad (Designer)",
                 "Ilya Antoshkin (Environment Artist / Technical Artist)",
-                "Evangelina Bakasi (Artist)",
+                "Evangelia Bakasi (Artist)",
                 "Barry Chen (Art Director and Animator)",
                 "Shengan Peng (Animation and Visual Effects)",
                 "Eric Ivar Persson (VFX Artist)",
