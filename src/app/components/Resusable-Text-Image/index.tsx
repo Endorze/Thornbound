@@ -10,7 +10,7 @@ const ReusableTextImage = ({ name, description, image, video, reversed = false }
             <div className={`flex flex-col lg:flex-row ${reversed ? 'lg:flex-row-reverse' : ''} gap-6`}>
                 <div className="w-full p-4">
 
-                    <h1 className="pb-3">{name}</h1>
+                    <h2 className="pb-3">{name}</h2>
                     <div>{description}</div>
                 </div>
 

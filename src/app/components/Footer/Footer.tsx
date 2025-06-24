@@ -8,9 +8,9 @@ export default function ThornboundFooter() {
         {/* Left side - Logo */}
         <div className="flex-shrink-0">
           <img 
-            src="/thornbound.png" 
+            src="/images/thornlogo.png" 
             alt="Thornbound" 
-            className="h-40 w-auto"
+            className="h-20 w-auto"
           />
         </div>
 

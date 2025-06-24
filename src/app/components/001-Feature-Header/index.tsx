@@ -73,7 +73,7 @@ const Header = () => {
       {menuOpen && (
         <nav className="flex flex-col gap-4 mt-4 md:hidden">
           {navItems.map((item) => (
-            <Link key={item.href} href={item.href} className="relative group">
+            <Link key={item.href} href={item.href} className="relative group" onClick={() => setMenuOpen(false)}>
               <span
                 className={`text-sm tracking-widest ${pathname === item.href ? 'text-white' : 'text-gray-300'}`}
               >
@@ -100,8 +100,8 @@ const Header = () => {
                 {item.name}
               </span>
               <span
-                className={`absolute bottom-[-25px] left-0 h-[2px] bg-white transition-all duration-300 
-      ${pathname === item.href ? 'w-full' : 'w-0 group-hover:w-full'}`}
+                className={`absolute bottom-[-15px] left-0 h-[2px] bg-white transition-all duration-300 
+                ${pathname === item.href ? 'w-full' : 'w-0 group-hover:w-full'}`}
               ></span>
             </Link>
 

@@ -1,11 +1,14 @@
-import { CreditsItems } from "@/data/dataFile";
 import CreditsSection from "../components/005-credits-section";
+import ReusableHero from "../components/ReusableHero/ReusableHero";
+import MaxWidthContainer from "../components/MaxWidthContainer/MaxWidthContainer";
 
 export default function CreditsPage() {
     return (
-        <div className="flex flex-col text-center items-center justify-center min-h-screen">
-            <h1 className="text-4xl font-bold"> Welcome to the Credits</h1>
-            <CreditsSection />
+        <div className="flex flex-col text-center items-center justify-center">
+            <ReusableHero title="Credits" mainHero={false}/>
+            <MaxWidthContainer>
+                <CreditsSection />
+            </MaxWidthContainer>
         </div>
     )
 }

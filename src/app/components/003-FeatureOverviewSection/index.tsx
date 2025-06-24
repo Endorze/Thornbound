@@ -1,13 +1,9 @@
-
-
-import ReusableTextImage from "../Resusable-Text-Image";
-import { FeaturesItems   } from "../../../data/dataFile";
-
+import ReusableTextImage from "../006-Resusable-Text-Image";
 
 const OverviewSection = () => {
     return (
         <>
-            <div className="text-center mb-10">
+            <div className="text-center mb-10 pt-12">
                 <h2 className="text-5xl md:text-7xl text-white">OVERVIEW</h2>
             </div>
 
