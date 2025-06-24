@@ -173,7 +173,7 @@ export const LoreItems: DataFileProp[] = [
     },
 
     {
-        name: "KRAVIA MANOR",
+        name: "CASTLE KRAVIA",
         description:
             "There once was a rich scholar, interested in the arcane and all its creations, especially the rare kind. Her name was Corryn Vaunt, it is said that she was the owner of this Castle and some speculate that she has Virellis protected inside of it, she might have even built the castle around it. Many have dared venturing into its halls, but no one has been able to come back and tell of what's inside it.",
         images: [

@@ -5,7 +5,6 @@ export default function ThornboundFooter() {
     <footer className="bg-black py-16 px-8">
       <div className="flex flex-col lg:flex-row lg:max-w-6xl mx-auto items-center justify-between">
 
-        {/* Left side - Logo */}
         <div className="flex-shrink-0">
           <img 
             src="/images/thornlogo.png" 
@@ -14,7 +13,6 @@ export default function ThornboundFooter() {
           />
         </div>
 
-        {/* Center - Main content */}
         <div className="flex flex-col items-center text-center">
           <h2 className="text-white mb-6" style={{ fontFamily: 'Almendera', fontSize: '32px' }}>
             Play the game now!
@@ -22,7 +20,6 @@ export default function ThornboundFooter() {
           <DownloadButton />
         </div>
 
-        {/* Right side - Game info */}
         <div className="pt-4 lg:flex-shrink-0 text-right">
           <div className="mb-4">
             <p className="text-white mb-1" style={{ fontFamily: 'Volkhov', fontSize: '20px' }}>Release date</p>
