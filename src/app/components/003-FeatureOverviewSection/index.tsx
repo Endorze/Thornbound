@@ -1,4 +1,8 @@
-import ReusableTextImage from "../006-Resusable-Text-Image";
+
+
+import ReusableTextImage from "../Resusable-Text-Image";
+import { FeaturesItems   } from "../../../data/dataFile";
+
 
 const OverviewSection = () => {
     return (
