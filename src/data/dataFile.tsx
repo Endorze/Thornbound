@@ -28,7 +28,7 @@ export const IndividualsData: DataFileProp[] = [
 
     {
         name: "GHAZALEH",
-        description: "Digital Dreamweaver & Creative Tinkerer. If my designs had a heartbeat, they'd thump to the rhythm of late-night playlists and too many cups of tea. As the 3D environment artist and visual storyteller, I sculpt worlds where players lose themselves — from distant galaxies to cozy village squares. I live in the sweet spot where art meets tech, fine-tuning every asset to flow seamlessly through the pipeline, keeping designers, animators, and coders all smiling (or at least not pulling their hair out). Sure, I sometimes forget what normal working hours' mean, but seeing our worlds breathe with life? That's my fuel. With roots in concept art, graphic design, and a passion for atmospheric lighting, I obsess over every texture, shadow, and tiny prop, because details aren't just details — they're the story.",
+        description: "Hi, I’m Ghazaleh — a game designer with a focus on level design. I’ve primarily worked on the early sections of the game in the dungeons, as well as the final area, the MoonFlower Chamber. While designing the onboarding, my main goal was to ensure that players gradually learn the core elements of the game so they can recognize and use them effectively as they progress. I especially enjoyed crafting the paths, planning enemy encounters, and placing obstacles in ways that allow players to peek around corners and strategize before engaging. Of course, every player approaches these challenges differently — which is part of the fun!",
         image: "./images/ghazaleh.png"
     },
 
@@ -173,7 +173,7 @@ export const LoreItems: DataFileProp[] = [
     },
 
     {
-        name: "KRAVIA MANOR",
+        name: "CASTLE KRAVIA",
         description:
             "There once was a rich scholar, interested in the arcane and all its creations, especially the rare kind. Her name was Corryn Vaunt, it is said that she was the owner of this Castle and some speculate that she has Virellis protected inside of it, she might have even built the castle around it. Many have dared venturing into its halls, but no one has been able to come back and tell of what's inside it.",
         images: [
