@@ -134,7 +134,7 @@ export const translations = {
     // Page titles
     pages: {
       aboutUs: 'Om Oss',
-      lore: 'Bakgrundshistoria',
+      lore: 'Bakgrund',
       credits: 'Erkännanden',
       home: 'Hem'
     },
@@ -160,7 +160,7 @@ export const translations = {
 
     // Lore page
     lore: {
-      title: 'Bakgrundshistoria',
+      title: 'Bakgrund',
       subtitle: 'Upptäck den rika världen och karaktärerna i Thornbound',
       storyIllustrationAlt: 'Zerims berättelseillustration'
     },
@@ -193,7 +193,7 @@ export const translations = {
       pageTitle: {
         home: 'Thornbound - Hem',
         aboutUs: 'Thornbound - Om Oss',
-        lore: 'Thornbound - Bakgrundshistoria',
+        lore: 'Thornbound - Bakgrund',
         credits: 'Thornbound - Erkännanden'
       }
     }

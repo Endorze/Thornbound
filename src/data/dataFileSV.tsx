@@ -28,7 +28,7 @@ export const IndividualsData: DataFileProp[] = [
 
     {
         name: "GHAZALEH",
-        description: "Digital Drömskapare & Kreativ Hantverkare. Om mina design hade en hjärtslag skulle de dunka i takt med sena nattens spellistor och för många koppar te. Som 3D-miljökonstnär och visuell berättare skulpterar jag världar där spelare förlorar sig själva — från avlägsna galaxer till mysiga bytorget. Jag lever i den söta punkten där konst möter teknik, finjusterar varje tillgång för att flyta smidigt genom pipelinen, håller designers, animatörer och kodare alla leende (eller åtminstone inte drar sig i håret). Visst, jag glömmer ibland vad 'normala arbetstider' betyder, men att se våra världar andas med liv? Det är mitt bränsle. Med rötter i konceptkonst, grafisk design och en passion för atmosfärisk belysning, älskar jag varje textur, skugga och liten rekvisita, eftersom detaljer inte bara är detaljer — de är historien.",
+        description: "Hej, jag heter Ghazaleh — jag är en speldesigner med fokus på nivådesign. Jag har framför allt arbetat med de tidiga delarna av spelet i grottorna, samt det sista området, Månbloemkammaren. När jag designade introduktionen var mitt huvudsakliga mål att se till att spelarna gradvis lär sig spelets kärnelement, så att de kan känna igen och använda dem effektivt när de går vidare.Jag tyckte särskilt om att utforma vägarna, planera fiendemöten och placera hinder på sätt som låter spelarna kika runt hörn och strategiskt förbereda sig innan de ger sig in i strider. Självklart närmar sig varje spelare dessa utmaningar på sitt eget sätt — och det är en del av det roliga.",
         image: "./images/ghazaleh.png"
     },
 
@@ -40,7 +40,7 @@ export const IndividualsData: DataFileProp[] = [
 
     {
         name: "EVANGELIA",
-        description: "Jag var rekvisitakonstnär för detta spel — så om du ser en cool tunna eller mystisk låda, var det förmodligen jag. Att arbeta på detta projekt var fantastiskt, främst tack vare den fantastiska teamenergin (och mycket kaffe). Min största bossstrid? Tiden. Men med lite strategisk tidshantering och några sena nätter lyckades jag samla ihop tillgångar jag är stolt över. Nu avslutar jag mina studier på Future Games, skärper mina färdigheter och förbereder mig för att gå med i spelbranschen. Min dröm? Att hjälpa till att skapa världar där spelare kan gå vilse — och kanske till och med snubbla över en av mina rekvisita",
+        description: "Jag var rekvisitakonstnären för det här spelet – så om du ser en cool tunna eller en mystisk grav, så var det antagligen jag. Att jobba med det här projektet var superkul, framför allt tack vare den fantastiska lagandan (och massor av kaffe).Min största bossfight? Tiden. Men med lite strategisk tidsplanering och några sena nätter lyckades jag ta fram assets som jag är stolt över.Nu håller jag på att avsluta mina studier på Future Games, finslipar mina färdigheter och laddar upp för att ge mig in i spelbranschen. Min dröm? Att vara med och skapa världar som spelare kan gå vilse i – och kanske till och med snubbla över en av mina props.",
         image: "./images/EVANGELIA.JPG"
     },
 
@@ -173,7 +173,7 @@ export const LoreItems: DataFileProp[] = [
     },
 
     {
-        name: "KRAVIA HERRSÄTE",
+        name: "SLOTTET KRAVIA",
         description:
             "Det fanns en gång en rik lärde, intresserad av det arkana och alla dess skapelser, särskilt den sällsynta sorten. Hennes namn var Corryn Vaunt, det sägs att hon var ägaren till detta slott och vissa spekulerar att hon har Virellis skyddad inuti det, hon kan till och med ha byggt slottet runt det. Många har vågat vandra in i dess hallar, men ingen har kunnat komma tillbaka och berätta om vad som finns inuti det.",
         images: [
