@@ -40,8 +40,8 @@ export const IndividualsData: DataFileProp[] = [
 
     {
         name: "EVANGELIA",
-        description: "I was the prop artist for this game—so if you see a cool barrel or mysterious crate, that was probably me. Working on this project was a blast, mainly thanks to the amazing team energy(and lots of coffee). My biggest boss battle ? Time.But with some strategic time management and a few late nights, I pulled together assets I'm proud of. Now, I'm finishing my studies at Future Games, sharpening my skills, and gearing up to join the game industry. My dream? To help create worlds where players can get lost—and maybe even trip over one of my props",
-        image: "./images/EVANGELIA.JPG"
+        description: "I was the prop artist for this game—so if you see a cool barrel or mysterious tomb,that was probably me.Working on this project was a blast,mainly thanks to the amazing team energy(and lots of coffee).My biggest boss battle? Time.But with some strategic time management and a few late nights,I pulled together assets I'm proud of.Now,I'm finishing my studies at Future Games,sharpening my skills,and gearing up to join the game industry.My dream? To help create worlds where players can get lost—and maybe even trip over one of my props.",
+        image: "./images/EVANGELIE.JPG"
     },
 
     {
