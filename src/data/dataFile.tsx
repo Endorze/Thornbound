@@ -41,7 +41,7 @@ export const IndividualsData: DataFileProp[] = [
     {
         name: "EVANGELIA",
         description: "I was the prop artist for this game—so if you see a cool barrel or mysterious tomb,that was probably me.Working on this project was a blast,mainly thanks to the amazing team energy(and lots of coffee).My biggest boss battle? Time.But with some strategic time management and a few late nights,I pulled together assets I'm proud of.Now,I'm finishing my studies at Future Games,sharpening my skills,and gearing up to join the game industry.My dream? To help create worlds where players can get lost—and maybe even trip over one of my props.",
-        image: "./images/EVANGELIE.JPG"
+        image: "./images/evangelia.jpg"
     },
 
     {
@@ -111,7 +111,7 @@ export const FeaturesItems: DataFileProp[] = [
         description: "As Zerim, an experienced retired mage who has a young granddaughter Elira with a deadly illness with no working cure. Find and fight your way through the deathtrap that is Castle Kravia, filled with enemies, traps and puzzles. Unveil the forsaken secrets of previous venturers and the castle itself to get a hold of the rare and protected flower Virellis, said to cure any injury and illness or grant Immortality to whoever consumes it, to save Elira. Do you think you can make it out alive? ",
         video: "./images/video.mp4"
     },
-    
+
     {
         name: "Spells",
         description: " Zerim wields fire and lightning magic, drawn from the crystals growing within the castle. Fire burns the hottest but doesn't reach very far, making it useful for close encounters when aiming time is limited. Lightning is cooler but has greater range, making it excellent for keeping Zerim at a distance from cursed ones.",
